@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import PageLayout from "../layouts/PageLayout.astro";
+
+import headshot from "../images/t&h.jpg";
+import twLogo from "../images/tw-logo.svg";
+---
+
+<PageLayout title="index">
+  <div class="h-screen flex items-center">
+    <div class="flex w-1/2 items-center">
+      <div class="flex flex-col gap-4 max-w-xl text-lg leading-loose font-normal text-gray-500">
+        <div class="">
+          I <span class="text-gray-900">design interfaces</span> for software products, <span class="text-gray-900">build internet businesses</span>, and occasionally <span class="text-gray-900">write books</span>.
+        </div>
+        <div>
+          In a past life I <span class="text-gray-900">designed video games</span>. In my off time I’m <span class="text-gray-900">renovating a 100 year old Victorian house</span> in the Pacific Northwest.
+        </div>
+        <div>
+          It's nice to see you,
+        </div>
+          <Image 
+            src={twLogo}
+            width="40px"
+            alt="tdub.co logo" 
+          />
+        </div>
+      </div>
+      <div class="w-1/2 flex justify-center">
+          <div class="rotate-1">
+            <Image 
+              src={headshot}
+              width="383px"
+              alt="Tyler Wanlass headshot"
+              class="shadow-md"
+            />
+            <div class="w-full text-right text-[12px] font-medium text-gray-500 py-2"><sup>1</sup> Nope – not the gorgeous brunette. I’m the beardy dude.</div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</PageLayout>

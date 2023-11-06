@@ -1,0 +1,21 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+const allPosts = await Astro.glob('../pages/posts/*.md');
+---
+
+<PageLayout title="Writing">
+  <section class="mt-32">
+    <h1>Writing</h1>
+    <ul class="m-0">
+      {allPosts.reverse().map((post) => 
+        <li class="list-none mb-0">
+          <a 
+            class="flex text-lg text-gray-600 group hover:text-gray-900 no-underline border-b py-8"
+            href={post.url}>
+            {post.frontmatter.title} <span class="transition-all opacity-0 pl-2 group-hover:opacity-100 group-hover:pl-4">→</span>
+          </a>
+        </li>
+      )}
+    </ul>
+  </section>
+</PageLayout>

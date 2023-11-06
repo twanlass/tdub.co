@@ -1,0 +1,25 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import { fade } from 'astro:transitions';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+
+const {frontmatter} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={frontmatter.title} />
+    <ViewTransitions />
+  </head>
+
+  <body class="bg-white dark:bg-black subpixel-antialiased" transition:animate={fade({ duration: '0.15s' })}>
+    <Header />
+    <main class="mx-auto max-w-6xl mt-32">
+      <section class="max-w-3xl">
+        <h1>{frontmatter.title}</h1>
+        <slot />
+      </section>
+    </main>
+  </body>
+</html>

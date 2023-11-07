@@ -17,7 +17,7 @@ Yea, super awesome.
 
 So then what is [re:splashed](http://resplashed.com)? Well, [re:splashed](http://resplashed.com) is the result of a weekend hack project to dramatically improve the experience of browsing and discovering Unsplash photos:
 
-![resplashed.com]({{ site.url }}/img/posts/resplashed-web.jpg)
+![resplashed.com](../../images/posts/resplashed-web.jpg)
 
 Sounds simple, right?
 
@@ -29,7 +29,7 @@ So I set out to build [re:splashed](http://resplashed.com) **with three goals in
 2. **Speed** - make it fast! Long loads and unresponsive UIs are bad.
 3. **Simplicity** - keep it stupid simple and focus on core user tasks.
 
-![early sketches of re:splashed]({{ site.url }}/img/posts/resplashed-sketches.jpg)
+![early sketches of re:splashed](../../images/posts/resplashed-sketches.jpg)
 
 ## Discoverability
 
@@ -47,7 +47,8 @@ Simple tags based on high-level generic keywords. Found an image of beaches but 
 
 Tags present a simple sorting method that drastically improves discoverability. It's now super easy to quickly discover awesome images navigating by just tags alone.
 
-![photo tags]({{ site.url }}/img/posts/tag-discovery.jpg)
+![photo tags](../../images/posts/tag-discovery.jpg)
+
 
 ### Search Please
 
@@ -57,7 +58,7 @@ I know what I'm looking for. Can I just search?
 **Solution:**
 One awesome benefit of having tagged photos is search. With all of our images now cataloged with basic tags (thanks wife!) searching across the 400+ images for exactly what you're looking for is now possible.
 
-![simple search]({{ site.url }}/img/posts/search.jpg)
+![simple search](../../images/posts/search.jpg)
 
 
 ### Viewing multiple images
@@ -68,7 +69,7 @@ Ultra-large previews of the images are nice, but they make viewing more than one
 **Solution:**
 Present images in a smaller format – 3 across per row. In a single viewport / screen this means you can easily view 6-9 images at a time.
 
-![re-worked image display]({{ site.url }}/img/posts/images-per-view.jpg)
+![re-worked image display](../../images/posts/images-per-view.jpg)
 
 
 ## Speed

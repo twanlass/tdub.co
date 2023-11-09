@@ -7,7 +7,7 @@ import twLogo from "../images/tw-logo.svg";
 ---
 
 <PageLayout title="index">
-  <div class="h-screen flex flex-col lg:flex-row gap-8 lg:gap-0 items-center mt-6 lg:mt-0">
+  <div class="h-screen flex flex-col lg:flex-row gap-8 lg:gap-0 items-center">
     <div class="flex w-full lg:w-1/2 items-center">
       <div class="flex flex-col gap-4 max-w-xl text-base lg:text-lg leading-loose lg:leading-loose font-normal text-gray-500">
         <div class="text-gray-900">
@@ -19,17 +19,17 @@ import twLogo from "../images/tw-logo.svg";
         <div>
           In my off time I’m <span class="text-gray-900">renovating a 100 year old Victorian house</span> in the Pacific Northwest. In a past life I <span class="text-gray-900">designed video games</span>.
         </div>
-        <div>
+        <div class="flex flex-col">
           It's nice to see you,
-        </div>
-        <div class="inline-flex text-black gap-1 -rotate-3 max-w-[60px]">
-          –
-          <Image 
-            src={twLogo}
-            width="40px"
-            class="max-w-[32px] lg:max-w-none"
-            alt="tdub.co logo" 
-          />
+          <div class="inline-flex text-black -rotate-3 max-w-[60px]">
+            –
+            <Image 
+              src={twLogo}
+              width="40px"
+              class="max-w-[32px] lg:max-w-none"
+              alt="tdub.co logo" 
+            />
+          </div>
         </div>
         </div>
       </div>

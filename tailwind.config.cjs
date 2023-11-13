@@ -6,6 +6,8 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontSize: {
+      xxs: ['12px', '150%'],
+      xs: ['14px', '150%'],
       sm: ['16px', '150%'],
       base: ['18px', '150%'],
       lg: ['23px', '110%'],

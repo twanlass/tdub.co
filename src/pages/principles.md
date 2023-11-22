@@ -30,3 +30,4 @@ This list is just for me, though I encourage you to think about your own and doc
 17. Observe without judgement
 18. Never quit on a bad day
 19. Start with what it isn't
+20. Disagree, share, and commit

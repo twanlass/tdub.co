@@ -9,19 +9,19 @@
         @apply mb-3 lg:mb-6;
     }
     h1 {
-        @apply lg:text-3xl text-2xl;
+        @apply lg:text-3xl text-xl;
     }
     h2 {
-        @apply lg:text-2xl text-xl;
+        @apply lg:text-2xl text-lg;
     }
     h3 {
-        @apply lg:text-xl text-lg;
+        @apply lg:text-xl text-base;
     }
     h4 {
         @apply text-lg;
     }
     p, li {
-        @apply text-base;
+        @apply lg:text-base text-sm;
     }
     ol {
         @apply list-decimal;

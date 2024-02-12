@@ -5,7 +5,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 
 <PageLayout title="Writing">
   <section class="mt-6 mb-24 lg:mt-16 lg:mb-8">
-    <h1>Writing</h1>
+    <h1>Notes</h1>
     <ul class="m-0">
       {allPosts.reverse().map((post) => 
         <li class="list-none mb-0">

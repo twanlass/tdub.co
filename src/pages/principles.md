@@ -3,7 +3,7 @@ layout: ../layouts/PostLayout.astro
 title: Principles
 ---
 
-Last updated **Decembrer 20th, 2023**.
+Last updated **Jan 16th, 2023**.
 
 These are a set of foundational principles and mental models I'm finding repeatedly useful in my life.  
 
@@ -31,4 +31,5 @@ This list is just for me, though I encourage you to think about your own and doc
 18. Never quit on a bad day
 19. Start with what it isn't
 20. Disagree, share, and commit
-21. You can't judge a decision by it's outcome
+21. You can't judge a decision by its outcome
+22. Find your hook

@@ -21,7 +21,7 @@
         @apply text-lg;
     }
     p, li {
-        @apply lg:text-base text-sm;
+        @apply lg:text-base text-sm font-light leading-loose;
     }
     ol {
         @apply list-decimal;
@@ -51,6 +51,7 @@
         @apply p-4;
         @apply rounded-md;
         @apply mb-6;
+        @apply leading-loose
     }
     blockquote p {
         @apply mb-0;

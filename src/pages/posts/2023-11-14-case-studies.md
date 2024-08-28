@@ -17,8 +17,7 @@ Case studies suck to create as a designer and are awful to read for hiring manag
 * Fin ✌️
 
 > **A real example:**  
-> Here's the exact PDF portfolio I used to land a lead product design role:  
-> **👉 [Tyler's PDF portfolio](https://www.dropbox.com/s/vpoc6sc8oyzwwgd/Tyler-Wanlass-Portfolio-Samples-2022.pdf?dl=0)**
+> Here's [the exact PDF portfolio](https://www.dropbox.com/s/vpoc6sc8oyzwwgd/Tyler-Wanlass-Portfolio-Samples-2022.pdf?dl=0) I used to land a lead product design role.
 
 ### Things that you absolutely need, aka the minimum viable case study:
 
@@ -55,5 +54,5 @@ A more complex option is to pick one of your case studies and expand it. Add mor
 ### Footnote: who the heck are you?  
 **TL:DR:**  I've hired 20+ designers (mostly product + brand) and reviewed well over 10,000 portfolios.  
 
-I currently lead product + design ~[at a Series A startup](https://commandbar.com/)~. Prior to that I was VP of Design at ~[Buffer](https://buffer.com/)~. And prior to that I ran a product design agency for years.
+I currently lead product + design [at a Series A startup](https://commandbar.com/). Prior to that I was VP of Design at [Buffer](https://buffer.com/). And prior to that I ran a product design agency for years.
 This is just my take as both a designer and hiring manager. Your mileage will vary :-)

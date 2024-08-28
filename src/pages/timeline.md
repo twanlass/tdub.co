@@ -3,7 +3,7 @@ layout: ../layouts/PostLayout.astro
 title: Timeline
 ---
 
-Last updated **Feb 24th, 2023**.
+Last updated **Aug 28th, 2024**.
 
 I've always been a maker. Over the years I've worked on a lot of stuff. As a designer, engineer, product person, and business person.
 
@@ -29,6 +29,7 @@ I've followed my curiosity down many rabbit holes. Below are some of the highlig
 - [Unframes](https://unfram.es/) - Modern printing + framing
 - [Simple Goods](https://simplegoods.co) – if you can upload it, you can sell it ✌️
 - [Renovating Old Houses](https://oldhousebook.com/?&utm_source=tdub.co) – a self-published ebook
+- [Death 2 Lorem](https://death2lorem.com) – A Figma plugin 🤘
 
 ---
 
@@ -108,5 +109,6 @@ I had some fun with [Unframes](https://unfram.es).
 **CommandBar**  
 I joined an early stage (Series A) startup ✌️
 
-## 2024  
-👀
+### 2024  
+**Death 2 Lorem**  
+A simple Figma plugin to generate, translate, and rewrite text with the power of OpenAI

@@ -106,8 +106,8 @@ I self-published a book – [Renovating Old Houses](https://oldhousebook.com/?
 **Unframes**  
 I had some fun with [Unframes](https://unfram.es). 
 
-**CommandBar**  
-I joined an early stage (Series A) startup ✌️
+**Command AI**  
+I joined a series A startup as employee #8 ✌️
 
 ### 2024  
 **Death 2 Lorem**  

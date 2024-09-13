@@ -9,7 +9,7 @@ I update my _now page_ a few times a year to share a little bit about my current
 
 ---
 
-- Designing software products at [CommandBar](https://commandbar.com). 
+- Designing software products at [Command AI](https://command.ai). 
 - Sold ~~Building~~ [Simple Goods](https://simplegoods.co). 
 - Published a short book: [Renovating Old Houses](https://oldhousebook.com/?&utm_source=tdub.co).
 - Renovating a [hundred year old house](https://www.instagram.com/cherrystreetrenovation/).

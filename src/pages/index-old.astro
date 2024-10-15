@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import PageLayout from "../layouts/PageLayout.astro";
+
+import headshot from "../images/t&h.jpg";
+import twLogo from "../images/tw-logo.svg";
+---
+
+<PageLayout title="Home">
+  <section class="flex flex-col mt-8 mb-24 lg:mt-0 lg:mb-0 lg:flex-row gap-8 lg:gap-0 items-center lg:h-[calc(100vh-64px)]">
+    <div class="flex w-full lg:w-1/2 items-center">
+      <div class="flex flex-col gap-4 max-w-xl text-base lg:text-lg leading-loose lg:leading-loose font-light text-gray-900">
+        <div>
+          I'm Tyler. 
+        </div>
+        <div>
+          I design interfaces for software products, build internet businesses, and occasionally write books.
+        </div>
+        <div>
+          In my off time I’m renovating a 100 year old Victorian house in the Pacific Northwest. In a past life I designed video games.
+        </div>
+        <div class="flex flex-col">
+          It's nice to see you,
+          <div class="inline-flex text-black -rotate-3 max-w-[60px]">
+            –
+            <Image 
+              src={twLogo}
+              width="40px"
+              class="max-w-[32px] lg:max-w-none"
+              alt="tdub.co logo" 
+            />
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="flex w-full lg:w-1/2 justify-center">
+          <div class="flex flex-col items-center justify-center rotate-1">
+            <Image 
+              src={headshot}
+              width="383px"
+              alt="Tyler Wanlass headshot"
+              class="shadow-md max-w-[85%] lg:max-w-none"
+            />
+            <div class="w-full text-center text-[12px] font-medium text-gray-500 py-2"><sup>1</sup> Nope – not the gorgeous brunette. I’m the beardy dude.</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>

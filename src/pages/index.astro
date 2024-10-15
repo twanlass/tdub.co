@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import PageLayout from "../layouts/LayoutIndex.astro";
+import LayoutIndex from "../layouts/LayoutIndex.astro";
 import ProjectCard from '../components/projectCard.astro';
 
 import avatar from "../images/2024/tw-avatar.png";
@@ -28,15 +28,15 @@ import nav from "../images/2024/work/command-ai/nav.png";
 
 ---
 
-<PageLayout title="Home">
+<LayoutIndex title="Home">
 <nav>
-    <ul class="flex items-center list-none m-0 grow text-[22px] font-[305] tracking-[0.32px] ">
+    <ul class="flex items-center list-none m-0 grow text-[22px] font-[325] tracking-[0.32px]">
         <div class="flex w-1/3 justify-start gap-2">
-            <li class="">Notes,</li>
-            <li>Design</li>
+            <li class="cursor-not-allowed select-none">Notes,</li>
+            <li><a href="#design" class="no-underline hover:text-[#6A6A6A]">Design</a></li>
         </div>
         <div class="flex w-1/3 justify-center">
-            <li class="flex flex-col justify-center">
+            <li class="flex flex-col justify-center select-none">
                 <Image 
                     src={twLogo}
                     width="34px"
@@ -48,15 +48,15 @@ import nav from "../images/2024/work/command-ai/nav.png";
                     src={underline}
                     width="40px"
                     class="pt-[2px]"
-                    alt="Tyler Wanlass signature" 
+                    alt="underline" 
                     quality={100}
                 />
             </li>
         </div>
         <div class="flex w-1/3 justify-end gap-2">
-            <li>Timeline,</li>
-            <li>Principles,</li>
-            <li>Now</li>
+            <li class="cursor-not-allowed select-none">Timeline,</li>
+            <li class="cursor-not-allowed select-none">Principles,</li>
+            <li class="cursor-not-allowed select-none">Now</li>
         </div>
     </ul>
 </nav>
@@ -196,7 +196,7 @@ import nav from "../images/2024/work/command-ai/nav.png";
         </div>
     </div>
     <!-- Section: work -->
-    <div class="section flex flex-col gap-6">
+    <div class="section flex flex-col gap-6" id="design">
         <div class="flex flex-col gap-2">
             <h2 class="text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Design</h2>
             <p class="text-[18px] font-[360] text-[#909090]">2024 work samples</p>
@@ -215,26 +215,13 @@ import nav from "../images/2024/work/command-ai/nav.png";
                 <ProjectCard img={nav} caption="App navigation and IA" project="Command AI" styles="bg-[#9BF1FD]" />
                 <ProjectCard img={nudgeStep} caption="Nudge builder step UI" project="Command AI" styles="bg-[#FDD19B]" />
             </div>
-
             <ProjectCard img={nudgeEdit} caption="Nudge editor to build tours, announcements, and surveys" project="Command AI" styles="bg-[#E89BFD]" />
-            
             <ProjectCard img={nudgeIndex} caption="Nudge index view" project="Command AI" styles="bg-[#9BF1FD]" />
-            
-            
-            <ProjectCard img={analyticsNPS} caption="Analytics dashboard detail for NPS surveys" project="Command AI" styles="bg-[#8989FF]" />
-            
+            <ProjectCard img={analyticsNPS} caption="Analytics dashboard detail for NPS surveys" project="Command AI" styles="bg-[#8989FF]" />    
             <ProjectCard img={copilotAPIs} caption="API editor for AI agent consumable endpoints" project="Command AI" styles="bg-[#FDD19B]" />
-            
             <ProjectCard img={copilotXray} caption="AI agent response inspection tool (Xray)" project="Command AI" styles="bg-[#8989FF]" />
-            
-            
-            
-            
-
-
             <ProjectCard img={blocks} caption="Nudge builder blocks" project="Command AI" styles="bg-[#E89BFD]" />
             <ProjectCard img={menus} caption="Menus" project="Command AI" styles="bg-[#9BF1FD]" />
-            
         </div>
     </div>
     
@@ -249,5 +236,4 @@ import nav from "../images/2024/work/command-ai/nav.png";
         </div>
     </div>
 </div>
-
-</PageLayout>
+</LayoutIndex>

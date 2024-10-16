@@ -2,6 +2,9 @@
 import { Image } from 'astro:assets';
 import LayoutIndex from "../layouts/LayoutIndex.astro";
 import ProjectCard from '../components/projectCard.astro';
+import TableSection from  '../components/tableSection.astro';
+import Table from '../components/table.astro';
+import TableRow from '../components/tableRow.astro';
 
 import avatar from "../images/2024/tw-avatar.png";
 import twLogo from "../images/tw-logo.svg";
@@ -29,211 +32,142 @@ import nav from "../images/2024/work/command-ai/nav.png";
 ---
 
 <LayoutIndex title="Home">
-<nav>
-    <ul class="flex items-center list-none m-0 grow text-[22px] font-[325] tracking-[0.32px]">
-        <div class="flex w-1/3 justify-start gap-2">
-            <li class="cursor-not-allowed select-none">Notes,</li>
-            <li><a href="#design" class="no-underline hover:text-[#6A6A6A]">Design</a></li>
-        </div>
-        <div class="flex w-1/3 justify-center">
-            <li class="flex flex-col justify-center select-none">
-                <Image 
-                    src={twLogo}
-                    width="34px"
-                    class=""
-                    alt="Tyler Wanlass signature" 
-                    quality={100}
-                />
-                <Image 
-                    src={underline}
-                    width="40px"
-                    class="pt-[2px]"
-                    alt="underline" 
-                    quality={100}
-                />
-            </li>
-        </div>
-        <div class="flex w-1/3 justify-end gap-2">
-            <li class="cursor-not-allowed select-none">Timeline,</li>
-            <li class="cursor-not-allowed select-none">Principles,</li>
-            <li class="cursor-not-allowed select-none">Now</li>
-        </div>
-    </ul>
-</nav>
-<div class="hero flex flex-col gap-[96px] my-[96px]">
-    <Image 
-        src={avatar}
-        width={avatar.width / 2}
-        densities={[1.5, 2]}
-        class="select-none"
-        alt="Tyler Wanlass avatar" 
-        quality={100}
-    />
-    <div>
-        <h1 class="text-[40px] font-[490] leading-[115%] -tracking-[.8px] mb-4 text-balance" style="text-wrap: balance;">
-        Tyler is a <span class="thin-strike font-[400] text-[#909090]">recovering software engineer</span> product builder + designer from the PNW.
-        </h1>
-        <div class="text-[22px] text-[#909090] font-[338] -tracking-[.8px]">Likes: design, code, running, old houses, history, and learning new things.</div>
-    </div>
-    <div class="tldr font-[377] text-[24px] relative select-none">
-        tl;dr ↓
+    <nav class="hidden lg:block">
+        <ul class="flex items-center list-none m-0 grow text-[22px] font-[325] tracking-[0.32px]">
+            <div class="flex w-1/3 justify-start gap-2">
+                <li class="cursor-not-allowed select-none">Notes,</li>
+                <li><a href="#design" class="no-underline hover:text-[#6A6A6A] transition-all">Design</a></li>
+            </div>
+            <div class="flex w-1/3 justify-center">
+                <li class="flex flex-col justify-center select-none">
+                    <Image 
+                        src={twLogo}
+                        width="34px"
+                        class=""
+                        alt="Tyler Wanlass signature" 
+                        quality={100}
+                    />
+                    <Image 
+                        src={underline}
+                        width="40px"
+                        class="pt-[2px]"
+                        alt="underline" 
+                        quality={100}
+                    />
+                </li>
+            </div>
+            <div class="flex w-1/3 justify-end gap-2">
+                <li class="cursor-not-allowed select-none">Timeline,</li>
+                <li class="cursor-not-allowed select-none">Principles,</li>
+                <li class="cursor-not-allowed select-none">Now</li>
+            </div>
+        </ul>
+    </nav>
+    <div class="hero flex flex-col gap-16 lg:gap-[96px] my-16 lg:my-[96px]">
         <Image 
-            src={circled}
-            class="absolute -top-1 -left-8"
-            alt="Tyler Wanlass signature" 
+            src={avatar}
+            width={avatar.width / 2}
+            densities={[1.5, 2]}
+            class="select-none"
+            alt="Tyler Wanlass avatar" 
+            quality={100}
         />
-    </div>
-</div>
-    <div class="flex flex-col gap-24">
-    <!-- Section: CV -->
-    <div class="section flex flex-col gap-6">
-        <h2 class="text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Work</h2>
-        <!-- rows -->
-        <div class="text-[18px] font-[360] divide-y divide-[#DCDCDC]">
-            <!-- row -->
-            <div class="flex items-center h-14 relative gap-4">
-                <div class="w-2 h-2 bg-[#EFE500] absolute -left-6 animate-ping"></div>
-                <div class="w-2 h-2 bg-[#EFE500] absolute -left-6"></div>
-                <div class="w-[148px]">2024 – Now</div>
-                <div class="w-1/3">Design ✌️</div>
-                <div class=""><a href="https://amplitude.com" target="_blank">Amplitude</a> / B2B SaaS</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 gap-4">
-                <div class="w-[148px]">2022 – 2024</div>
-                <div class="w-1/3">Lead Product Designer</div>
-                <div class=""><a href="https://command.ai" target="_blank">Command AI</a> (Acquired) / B2B SaaS</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 gap-4">
-                <div class="w-[148px]">2016 – 2021</div>
-                <div class="w-1/3">VP of Design</div>
-                <div class=""><a href="https://buffer.com" target="_blank">Buffer</a> / B2B SaaS</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 gap-4">
-                <div class="w-[148px]">2013 – 2016</div>
-                <div class="w-1/3">Co-founder, Principal Designer</div>
-                <div class="">We Are Altitude / Agency</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 gap-4">
-                <div class="w-[148px]">2012 – 2012</div>
-                <div class="w-1/3">Entrepreneur in Residence</div>
-                <div class="">CreativeHQ / Startup accelerator</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 gap-4">
-                <div class="w-[148px]">2010 – 2012</div>
-                <div class="w-1/3">Co-founder</div>
-                <div class="">3dmotive / SaaS</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 gap-4">
-                <div class="w-[148px]">2006 – 2011</div>
-                <div class="w-1/3">Level Artist, Multiplayer Designer</div>
-                <div class="">Activision, Epic Games / Games</div>
-            </div>
+        <div>
+            <h1 class="text-[32px] lg:text-[56px] font-[590] leading-[115%] -tracking-[1px] mb-4 text-balance" style="text-wrap: balance;">
+            Tyler is a <span class="thin-strike font-[400] text-[#909090] blur-[3px]">recovering software engineer</span> product builder + designer from the PNW.
+            </h1>
+            <div class="text-[20px] lg:text-[22px] text-[#909090] font-[338] -tracking-[.8px]">Likes: design, code, running, old houses, history, and learning new things.</div>
+        </div>
+        <div class="tldr font-[377] text-[20px] lg:text-[24px] relative select-none">
+            tl;dr ↓
+            <Image 
+                src={circled}
+                class="absolute top-0 lg:-top-1 -left-4 lg:-left-8 w-[90px] lg:w-auto"
+                alt="Tyler Wanlass signature" 
+            />
         </div>
     </div>
-    <!-- Section: Speaking -->
-    <div class="section flex flex-col gap-6">
-        <h2 class="text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Speaking</h2>
-        <!-- rows -->
-        <div class="text-[18px] font-[360] divide-y divide-[#DCDCDC]">
-            <!-- row -->
-            <div class="flex items-center h-14 relative gap-4">
-                <div class="w-[148px]">2024</div>
-                <div class="w-1/3"><a href="https://podcast.userinterviews.com/episodes/149-research-tactics-for-designers-pms-with-tyler-wanlass-of-commandbar" target="_blank">“On guerrilla research tactics”</a></div>
-                <div class="">Awkward Silences / Podcast</div>
+        <div class="flex flex-col gap-12 lg:gap-24">
+        <!-- Section: CV -->
+        <TableSection title="Work">
+            <Table>
+                <TableRow date="2024 – Now" title="Design ✌️" subtitle="Amplitude" subtitleLink="https://amplitude.com" tag="B2B SaaS">
+                    <div class="w-2 h-2 bg-[#EFE500] absolute -left-[184px] top-[10px] animate-ping"></div>
+                    <div class="w-2 h-2 bg-[#EFE500] absolute -left-[184px] top-[10px]"></div>
+                </TableRow>
+                <TableRow date="2022 – 2024" title="Lead Product Designer" subtitle="Command AI (Acquired)" subtitleLink="https://command.ai" tag="B2B SaaS" />
+                <TableRow date="2016 – 2021" title="VP of Design" subtitle="Buffer" subtitleLink="https://buffer.com" tag="B2B SaaS" />
+                <TableRow date="2013 – 2016" title="Co-founder, Principal Designer" subtitle="We Are Altitude" tag="Agency" />
+                <TableRow date="2012 – 2012" title="Entrepreneur in Residence" subtitle="CreativeHQ" tag="Startup accelerator" />
+                <TableRow date="2010 – 2012" title="Co-founder" subtitle="3dmotive / SaaS" />
+                <TableRow date="2006 – 2011" title="Level Artist, Multiplayer Designer" subtitle="Activision, Epic Games" tag="Games" />
+            </Table>
+        </TableSection>
+
+        <!-- Section: Speaking -->
+        <TableSection title="Speaking">
+            <Table>
+                <TableRow date="2024" title="“On guerrilla research tactics”" titleLink="https://podcast.userinterviews.com/episodes/149-research-tactics-for-designers-pms-with-tyler-wanlass-of-commandbar" subtitle="Awkward Silences" tag="Podcast" />
+                <TableRow date="2020" title="“The Role of Design on Product Teams”" titleLink="https://betterproduct.libsyn.com/the-business-impact-of-product-design-the-role-of-design-on-product-development-with-tyler-wanlass-buffer" subtitle="Better Product" tag="Podcast" />
+            </Table>
+        </TableSection>
+        
+        <!-- Section: Side projects -->
+        <TableSection title="Side projects">
+            <Table>
+                <TableRow date="2024" title="Death 2 Lorem" titleLink="https://death2lorem.com" subtitle="Figma gen AI plugin">
+                    <Image 
+                        src={d2lLogo}
+                        class="absolute -top-2 left-[138px] rotate-6 drop-shadow-xl hidden lg:block"
+                        alt="Death 2 Lorem" 
+                    />
+                </TableRow>
+                <TableRow date="2022" title="Simple Goods" titleLink="https://simplegoods.co" subtitle="Ecommerce SaaS (Acqruied)" />
+                <TableRow date="2022" title="Renovating Old Houses" titleLink="https://oldhousebook.com/" subtitle="Ebook" />
+                <TableRow date="2022" title="Unframes" titleLink="https://unfram.es/" subtitle="Physical product" />
+            </Table>
+        </TableSection>
+
+
+        <!-- Section: work -->
+        <div class="section flex flex-col gap-6" id="design">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-[24px] lg:text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Design</h2>
+                <p class="text-[16px] lg:text-[18px] font-[360] text-[#909090]">2024 work samples</p>
             </div>
-            <!-- row -->
-            <div class="flex items-center h-14 relative  gap-4">
-                <div class="w-[148px]">2020</div>
-                <div class="w-1/3"><a href="https://betterproduct.libsyn.com/the-business-impact-of-product-design-the-role-of-design-on-product-development-with-tyler-wanlass-buffer" target="_blank">"The Role of Design on Product Teams"</a></div>
-                <div class="">Better Product / Podcast</div>
-            </div>
-        </div>
-    </div>
-    <!-- Section: Side projects -->
-    <div class="section flex flex-col gap-6">
-        <h2 class="text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Side projects</h2>
-        <!-- rows -->
-        <div class="text-[18px] font-[360] divide-y divide-[#DCDCDC]">
-            <!-- row -->
-            <div class="flex items-center h-14 relative  gap-4">
-                <div class="w-[148px]">2024</div>
-                <div class="w-1/3">
-                    <a href="https://death2lorem.com" target="_blank" class="relative">
-                        Death 2 Lorem
-                        <Image 
-                            src={d2lLogo}
-                            class="absolute -top-3 -right-12 rotate-6 drop-shadow-xl"
-                            alt="Death 2 Lorem" 
-                        />
-                    </a>
+            <div class="grid grid-cols-1 gap-4 lg:gap-8">
+                <!-- #8989FF // purple -->
+                <!-- #FDD19B // orange -->
+                <!-- #E89BFD // pink -->
+                <!-- #9BF1FD // blue -->
+                <ProjectCard img={nudgeTheme} caption="Inline theme editing experience" project="Command AI" cardStyles="bg-[#8989FF]" />
+                <ProjectCard img={copilotWorkflows} caption="Natural language workflow builder for AI agents" project="Command AI" cardStyles="bg-[#9BF1FD]" />
+                <ProjectCard img={analyticsChats} caption="Analytics dashboard for an AI chat agent" project="Command AI" cardStyles="bg-[#FDD19B]" />
+                <ProjectCard img={themesEdtior} caption="Theme editor for styling embedded widgets" project="Command AI" cardStyles="bg-[#E89BFD]" />
+                <ProjectCard img={modals} caption="Modals and popovers" project="Command AI" cardStyles="bg-[#8989FF]" imgStyles="img-transform img-shadow" />
+                <div class="grid grid-cols-2 gap-4 lg:gap-8">
+                    <ProjectCard img={nav} caption="App navigation and IA" project="Command AI" cardStyles="bg-[#9BF1FD]" imgStyles="img-transform img-shadow" />
+                    <ProjectCard img={nudgeStep} caption="Nudge builder step UI" project="Command AI" cardStyles="bg-[#FDD19B]" imgStyles="img-transform img-shadow" />
                 </div>
-                <div class="">Figma gen AI plugin</div>
+                <ProjectCard img={nudgeEdit} caption="Nudge editor to build tours, announcements, and surveys" project="Command AI" cardStyles="bg-[#E89BFD]" />
+                <ProjectCard img={nudgeIndex} caption="Nudge index view" project="Command AI" cardStyles="bg-[#9BF1FD]" />
+                <ProjectCard img={analyticsNPS} caption="Analytics dashboard detail for NPS surveys" project="Command AI" cardStyles="bg-[#8989FF]" />    
+                <ProjectCard img={copilotAPIs} caption="API editor for AI agent consumable endpoints" project="Command AI" cardStyles="bg-[#FDD19B]" />
+                <ProjectCard img={copilotXray} caption="AI agent response inspection tool (Xray)" project="Command AI" cardStyles="bg-[#8989FF]" />
+                <ProjectCard img={blocks} caption="Nudge builder blocks" project="Command AI" cardStyles="bg-[#E89BFD]" imgStyles="img-transform img-shadow" />
+                <ProjectCard img={menus} caption="Menus" project="Command AI" cardStyles="bg-[#9BF1FD]" imgStyles="img-transform img-shadow" />
             </div>
-            <!-- row -->
-            <div class="flex items-center h-14 relative  gap-4">
-                <div class="w-[148px]">2022</div>
-                <div class="w-1/3"><a href="https://simplegoods.co" target="_blank">Simple Goods</a></div>
-                <div class="">Ecommerce SaaS (Acqruied)</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 relative  gap-4">
-                <div class="w-[148px]">2022</div>
-                <div class="w-1/3"><a href="https://oldhousebook.com/" target="_blank">Renovating Old Houses</a></div>
-                <div class="">Ebook</div>
-            </div>
-            <!-- row -->
-            <div class="flex items-center h-14 relative  gap-4">
-                <div class="w-[148px]">2022</div>
-                <div class="w-1/3"><a href="https://unfram.es/" target="_blank">Unframes</a></div>
-                <div class="">Physical product</div>
+        </div>
+        
+        <!-- Section: footer -->
+        <div class="section flex flex-col gap-6 mb-24">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-[24px] lg:text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Fine print</h2>
+                <p class="text-[16px] lg:text-[18px] font-[360] text-[#909090]">Built from scratch with <a href="https://www.cursor.com/" target="_blank">Cursor</a>, <a href="https://astro.build/" target="_blank">Astro</a>, and <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>. Set in variable <a href="https://rsms.me/inter/" target="_blank">Inter</a>.</p>
+                <p class="text-[16px] lg:text-[18px] font-[360] text-[#909090]">Design, words, and code © 2024 Tyler Wanlass.</p>
+                <p class="text-[16px] lg:text-[18px] font-[360] text-[#909090]">You smell really nice.</p>
+                <p class="text-[16px] lg:text-[18px] font-[360] text-[#909090]">✌️</p>
             </div>
         </div>
     </div>
-    <!-- Section: work -->
-    <div class="section flex flex-col gap-6" id="design">
-        <div class="flex flex-col gap-2">
-            <h2 class="text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Design</h2>
-            <p class="text-[18px] font-[360] text-[#909090]">2024 work samples</p>
-        </div>
-        <div class="grid grid-cols-1 gap-8">
-            <!-- #8989FF // purple -->
-            <!-- #FDD19B // orange -->
-            <!-- #E89BFD // pink -->
-            <!-- #9BF1FD // blue -->
-            <ProjectCard img={nudgeTheme} caption="Inline theme editing experience" project="Command AI" styles="bg-[#8989FF]" />
-            <ProjectCard img={copilotWorkflows} caption="Natural language workflow builder for AI agents" project="Command AI" styles="bg-[#9BF1FD]" />
-            <ProjectCard img={analyticsChats} caption="Analytics dashboard for an AI chat agent" project="Command AI" styles="bg-[#FDD19B]" />
-            <ProjectCard img={themesEdtior} caption="Theme editor for styling embedded widgets" project="Command AI" styles="bg-[#E89BFD]" />
-            <ProjectCard img={modals} caption="Modals and popovers" project="Command AI" styles="bg-[#8989FF]" />
-            <div class="grid grid-cols-2 gap-8">
-                <ProjectCard img={nav} caption="App navigation and IA" project="Command AI" styles="bg-[#9BF1FD]" />
-                <ProjectCard img={nudgeStep} caption="Nudge builder step UI" project="Command AI" styles="bg-[#FDD19B]" />
-            </div>
-            <ProjectCard img={nudgeEdit} caption="Nudge editor to build tours, announcements, and surveys" project="Command AI" styles="bg-[#E89BFD]" />
-            <ProjectCard img={nudgeIndex} caption="Nudge index view" project="Command AI" styles="bg-[#9BF1FD]" />
-            <ProjectCard img={analyticsNPS} caption="Analytics dashboard detail for NPS surveys" project="Command AI" styles="bg-[#8989FF]" />    
-            <ProjectCard img={copilotAPIs} caption="API editor for AI agent consumable endpoints" project="Command AI" styles="bg-[#FDD19B]" />
-            <ProjectCard img={copilotXray} caption="AI agent response inspection tool (Xray)" project="Command AI" styles="bg-[#8989FF]" />
-            <ProjectCard img={blocks} caption="Nudge builder blocks" project="Command AI" styles="bg-[#E89BFD]" />
-            <ProjectCard img={menus} caption="Menus" project="Command AI" styles="bg-[#9BF1FD]" />
-        </div>
-    </div>
-    
-    <!-- Section: footer -->
-    <div class="section flex flex-col gap-6 mb-24">
-        <div class="flex flex-col gap-2">
-            <h2 class="text-[32px] font-[490] leading-[115%] -tracking-[.8px]">Fine print</h2>
-            <p class="text-[18px] font-[360] text-[#909090]">Built from scratch with Cursor, Astro, and Tailwind. Set in Inter variable.</p>
-            <p class="text-[18px] font-[360] text-[#909090]">Design, words, and code © 2024 Tyler Wanlass.</p>
-            <p class="text-[18px] font-[360] text-[#909090]">You smell really nice.</p>
-            <p class="text-[18px] font-[360] text-[#909090]">✌️</p>
-        </div>
-    </div>
-</div>
 </LayoutIndex>

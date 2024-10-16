@@ -1,0 +1,14 @@
+---
+const { date, title, titleLink = null, subtitle, subtitleLink = null, tag = null } = Astro.props;
+---
+<div class="flex items-center h-12 lg:h-14 relative gap-4 whitespace-nowrap">
+    <div class="w-[128px] lg:w-[148px] flex-none">{date}</div>
+    <div class="w-1/2 lg:w-1/3 relative truncate lg:overflow-visible flex-none">
+        {titleLink ?  <a href={titleLink} target="_blank">{title}</a> : title}
+        <slot/>
+    </div>
+    <div class="">
+        {subtitleLink ? <a href={subtitleLink} target="_blank">{subtitle}</a> : subtitle}
+        {tag ? ` / ${tag}` : ''}
+    </div>
+</div>

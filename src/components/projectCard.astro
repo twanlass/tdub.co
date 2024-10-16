@@ -1,18 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-const { img, caption, project, styles } = Astro.props;
-const cardStyles = `flex flex-col gap-2 p-6 ${styles}`;
+const { img, caption, project, cardStyles, imgStyles } = Astro.props;
 ---
-<div class={cardStyles}>
+<div class=`flex flex-col gap-2 p-3 lg:p-6 ${cardStyles}`>
     <Image 
         src={img}
         width={img.width / 2}
         densities={[1.5, 2]}
-        class="rounded-[6px]"
+        class=`rounded-[3px] lg:rounded-[6px] select-none ${imgStyles}`
         alt={caption}
     />
     <div class="flex flex-row justify-between text-[14px] font-[360] mix-blend-darken">
         <p>{caption}</p>
-        <p>{project}</p>
+        <p class="hidden lg:block">{project}</p>
     </div>
 </div>

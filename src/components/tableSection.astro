@@ -1,0 +1,8 @@
+---
+const { title } = Astro.props;
+---
+<div class="section flex flex-col gap-2 overflow-hidden lg:overflow-visible">
+    <h2 class="text-[24px] lg:text-[32px] font-[490] leading-[115%] -tracking-[.8px]">{title}</h2>
+    <!-- table, rows -->
+    <slot/>
+</div>

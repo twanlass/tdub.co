@@ -1,0 +1,28 @@
+---
+import LayoutPage from "../layouts/LayoutPage.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<LayoutPage title="Now">
+    <Nav></Nav>
+    <div class="hero flex flex-col gap-8 my-16 lg:my-[96px]">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-[32px] lg:text-[56px] font-[590] leading-[115%] -tracking-[1px] text-balance" style="text-wrap: balance;">
+                Now
+            </h1>
+            <p class="text-[20px] lg:text-[22px] text-[#909090] font-[338] -tracking-[.8px]">
+                Last updated October 23, 2024
+            </p>
+        </div>
+        <p class="text-[16px] lg:text-[18px] font-[360] max-w-prose">
+            I update my now page a few times a year to share a little bit about my current state. Inspired by <a href="https://sive.rs/now">Derek Sivers</a>.
+        </p>
+        <ul class="list-disc list-inside leading-loose text-[16px] lg:text-[18px] font-[360]">
+            <li>Designing software products at <a href="https://amplitude.com" target="_blank">Amplitude</a> via acquisition of <a href="https://command.ai" target="_blank">Command AI</a>.</li>
+            <li>Jamming on a generative AI Figma plugin, <a href="https://death2lorem.com" target="_blank">Death 2 Lorem</a></li>
+            <li>Renovating a <a href="https://www.instagram.com/cherrystreetrenovation/">hundred year old house</a>.</li>
+            <li>Living in the Pacific Northwest with my wife, two daughters, and a dog.</li>
+            <li>Previously Product + Design at <a href="https://buffer.com">Buffer</a>.</li>
+        </ul>
+    </div>
+</LayoutPage>

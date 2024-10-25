@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "On Focus & Boiling An Ocean"
+date: 2014-03-05
+tags: ['product', 'startups']
 ---
 Focus is something you learn, _not_ something you're born with. 
 

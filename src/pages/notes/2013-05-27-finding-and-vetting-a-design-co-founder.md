@@ -1,9 +1,11 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "Finding & Vetting A Design Co-founder"
+date: 2013-05-27
+tags: ['startups']
 ---
 
-I've written before on why it may be important to [add a designer to your founding team](/2012/05/31/startups-need-design-co-founders.html). But how do you go about finding and vetting one?
+I've written before on why it may be important to [add a designer to your founding team](/notes/2012-05-31-startups-need-design-co-founders). But how do you go about finding and vetting one?
 
 If you’re an engineer you may think it’s hard to find design talent (designers think the same thing about engineers!). That’s probably because you surround yourself with like minded people. That's other code slingers and uber nerds who'd rather discuss unit tests and OOP instead of typefaces and white space.
 

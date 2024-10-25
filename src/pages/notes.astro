@@ -1,0 +1,28 @@
+---
+import LayoutPage from "../layouts/LayoutPage.astro";
+import Nav from "../components/Nav.astro";
+const allPosts = await Astro.glob('../pages/notes/*.md');
+---
+
+<LayoutPage title="Now">
+    <Nav></Nav>
+    <div class="hero flex flex-col gap-8 my-16 lg:my-[96px]">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-[32px] lg:text-[56px] font-[590] leading-[115%] -tracking-[1px] text-balance" style="text-wrap: balance;">
+                Notes
+            </h1>
+        </div>
+        <ol class="list-none list-inside leading-loose text-[16px] lg:text-[18px] font-[360] divide-y divide-[#DCDCDC]">
+          {allPosts.reverse().map((post) => 
+            <li class="list-none mb-0">
+              <a 
+                class="no-underline text-[22px] font-[325] tracking-[0.32px] hover:text-[#6A6A6A] transition-all block lg:flex group py-4 truncate"
+                href={post.url}>
+                {post.frontmatter.title} <span class="transition-all opacity-0 pl-0 group-hover:opacity-100 group-hover:pl-2">→</span>
+              </a>
+            </li>
+          )}
+        </ol>
+
+    </div>
+</LayoutPage>

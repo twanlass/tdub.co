@@ -1,8 +1,10 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "Creation vs Consumption"
+date: 2014-02-24
+tags: ['productivity']
 ---
-I recently wrote about my latest personal experiment: [going on an information diet](/blog/im-going-on-an-information-diet). It's only been a few weeks but one thing is clear: **I'm creating far more than I'm consuming and it feels great**. 
+I recently wrote about my latest personal experiment: [going on an information diet](/notes/2014-02-18-im-going-on-an-information-diet). It's only been a few weeks but one thing is clear: **I'm creating far more than I'm consuming and it feels great**. 
 
 It's a rather simple idea to create more than you consume. In reality though it's quite hard to do. It's so easy to be a lump on the couch and watch an *entire* Netflix series like House of Cards. Effortless to read endless Tweets or Hacker News for an hour. Or for me it's playing a favorite PC game and time traveling 3 hours into the future.
 

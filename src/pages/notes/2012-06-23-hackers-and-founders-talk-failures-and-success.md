@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "Hackers & Founders Talk - Failures (and Success) + Slides"
+date: 2012-06-23
+tags: ['startups', 'talks']
 ---
 
 A few days ago I had the chance to give a talk to the local Wellington Hackers & Founders meetup about some of the successes and failures I’ve had with 3 of my startups. Slides are embedded below for convenience.

@@ -3,19 +3,19 @@ import LayoutPage from "../layouts/LayoutPage.astro";
 import Nav from "../components/Nav.astro";
 ---
 
-<LayoutPage title="Timeline">
+<LayoutPage title="Maker log">
     <Nav></Nav>
     <div class="hero flex flex-col gap-8 my-16 lg:my-[96px]">
         <div class="flex flex-col gap-2">
             <h1 class="text-[32px] lg:text-[56px] font-[590] leading-[115%] -tracking-[1px] text-balance" style="text-wrap: balance;">
                 Timeline
             </h1>
-            <p class="text-[20px] lg:text-[22px] text-[#909090] font-[338] -tracking-[.8px]">
+            <p class="text-[16px] lg:text-[18px] font-[360] text-[#909090] -tracking-[.8px]">
                 Last updated October 23, 2024
             </p>
         </div>
         <p class="text-[16px] lg:text-[18px] font-[360] max-w-prose">
-            I've always been a maker. Over the years I've worked on a lot of stuff. As a designer, engineer, product person, and business person. I've followed my curiosity down many rabbit holes. Below are some of the highlights.
+            I've always been a maker. Over the years I've worked on a lot of stuff. As a designer, engineer, product person, and entreprenuer. I've followed my curiosity down many rabbit holes. Below are some of the highlights.
         </p>
         <ul class="list-disc list-inside leading-loose text-[16px] lg:text-[18px] font-[360]">
             <li><a href="https://www.youtube.com/watch?v=bUuI1OJ27oE" target="_blank">Flipn' Monsters</a> – iOS monster/memory game</li>
@@ -36,89 +36,93 @@ import Nav from "../components/Nav.astro";
             <li><a href="https://oldhousebook.com/?&utm_source=tdub.co" target="_blank">Renovating Old Houses</a> – a self-published ebook</li>
             <li><a href="https://death2lorem.com" target="_blank">Death 2 Lorem</a> – A Figma plugin 🤘</li>
         </ul>
-<!-- 
-        <h3>2001</h3>
-        <strong>Upperrealm Interactive</strong>  
-        Built an indie RPG with a few friends in high school using DarkBasic and 3ds Max. Note: I've got a knack for awful company names. You'll see.
 
-        <h3>2002–2003</h3>
-        <strong>Immersed Designs</strong>  
-        To pay for all the tech gadgets I <del>needed</del> wanted, I started freelancing and building websites. I used to charge $2,000 USD for a 3 page Flash site. Those were the days.
+        <hr>
+    
+        <article>
+            <h2>2001</h2>
+            <h3>Upperrealm Interactive</h3>
+            <p>I built an indie RPG with a few friends in high school using DarkBasic and 3ds Max. Note: I've got a knack for awful company names. You'll see.</p>
 
-        <h3>2004</h3>
-        <strong>InfoStructure</strong>  
-        Later, while working at an electronics store in college, I quickly realized customers needed someone to help them setup/install all the cool stuff they were buying. Cue business opportunity. Biggest seller? $300 iPod installs. Remember when you had to connect an iPod to a computer and sync your music? 😁
+            <h2>2002–2003</h2>
+            <h3>Immersed Designs</h3>  
+            <p>To pay for all the tech gadgets I <del>needed</del> wanted, I started freelancing and building websites. I used to charge $2,000 USD for a 3 page Flash site. Those were the days.</p>
 
-        <h3>2006-2011</h3>
-        <strong>The Laboratory</strong>  
-        A few friends and I got together to build an early iPhone game, <a href="https://www.youtube.com/watch?v=bUuI1OJ27oE" target="_blank">Flipn' Monsters</a>. It was polished and ton of fun. Made maybe ~$500 (at $0.99 a piece). Later we make the game free and saw over ~100K downloads. Mostly in China. 🤷‍♂️
+            <h2>2004</h2>
+            <h3>InfoStructure</h3>  
+            <p>Later, while working at an electronics store in college, I quickly realized customers needed someone to help them setup/install all the cool stuff they were buying. Cue business opportunity. Biggest seller? $300 iPod installs. Remember when you had to connect an iPod to a computer and sync your music? 😁</p>
 
-        <strong>Fuel N’ Spark</strong>  
-        Another tiny game studio I started with a few friends. We shipped <a href="https://www.youtube.com/watch?v=MCRBygTU2NE" target="_blank">RocketBall</a>, one of the first XBLA (Xbox Live Arcade) games. It was _not_ polished and it's debateable (probably not) if it was any fun. The game was featured on IGN, Gamespy, etc.
+            <h2>2006-2011</h2>
+            <h3>The Laboratory</h3>  
+            <p>A few friends and I got together to build an early iPhone game, <a href="https://www.youtube.com/watch?v=bUuI1OJ27oE" target="_blank">Flipn' Monsters</a>. It was polished and ton of fun. Made maybe ~$500 (at $0.99 a piece). Later we make the game free and saw over ~100K downloads. Mostly in China. 🤷‍♂️</p>
 
-        <strong>3dmotive</strong>  
-        A few friends and I started recording video tutorials for artists looking to work in the games industry. This would eventually turn in a streaming platform and community and was my first real exposure to building a SaaS business. I also learned a ton about how to build and manage a remote team. It's still <a href="https://3dmotive.com/" target="_blank">around today</a> and being run by my awesome friends and previous co-founders.
+            <h3>Fuel N’ Spark</h3>  
+            <p>Another tiny game studio I started with a few friends. We shipped <a href="https://www.youtube.com/watch?v=MCRBygTU2NE" target="_blank">RocketBall</a>, one of the first XBLA (Xbox Live Arcade) games. It was _not_ polished and it's debateable (probably not) if it was any fun. The game was featured on IGN, Gamespy, etc.</p>
 
-        What does it have to do with 3d and cars? Nothing. Horrible naming skills strike again. 😆
+            <h3>3dmotive</h3>  
+            <p>A few friends and I started recording video tutorials for artists looking to work in the games industry. This would eventually turn in a streaming platform and community and was my first real exposure to building a SaaS business. I also learned a ton about how to build and manage a remote team. It's still <a href="https://3dmotive.com/" target="_blank">around today</a> and being run by my awesome friends and previous co-founders.</p>
 
-        <strong>High Moon Studios (owned by Activision Blizzard)</strong>  
-        Meanwhile... I got a sense of what professional software development looked like at scale while at High Moon Studios. Don't tell my ex-bosses I was building games on the side too – they'd frown upon that.
+            <p>What does it have to do with 3d and cars? Nothing. Horrible naming skills strike again. 😆</p>
 
-        I largely worked on <a href="https://youtu.be/TT7Gn5bGnkk" target="_blank">The Bourne Conspiracy</a>, a game based on the Jason Bourne series, and <a href="https://youtu.be/QFZrL0x63c8" target="_blank">Transformers: War for Cybertron</a>.
+            <h3>High Moon Studios (owned by Activision Blizzard)</h3>  
+            <p>Meanwhile... I got a sense of what professional software development looked like at scale while at High Moon Studios. Don't tell my ex-bosses I was building games on the side too – they'd frown upon that.</p>
 
-        What I enjoyed most though were the strike teams / skunkwork teams I worked on while there. We built a bunch of cool technology and tools. Some would never see the light of day; some would be built into future games.
+            <p>I largely worked on <a href="https://youtu.be/TT7Gn5bGnkk" target="_blank">The Bourne Conspiracy</a>, a game based on the Jason Bourne series, and <a href="https://youtu.be/QFZrL0x63c8" target="_blank">Transformers: War for Cybertron</a>.</p>
 
-        <strong>Psyonix (now owned by Epic Games)</strong>  
-        I spent a short stint at this awesome game studio. I largely worked on a the multi-player mode for a gory first person shooter, <a href="https://youtu.be/K8F8-tVPMB4" target="_blank">Bulletstorm</a>. I also had a blast doing some early design explorations for Rocket League, the wild car meets soccer sensation.
+            <p>What I enjoyed most though were the strike teams / skunkwork teams I worked on while there. We built a bunch of cool technology and tools. Some would never see the light of day; some would be built into future games.</p>
 
-        I also learned a lot here about working with a remote team while we collaborated with the awesome folks in Poland at People Can Fly.
+            <h3>Psyonix (now owned by Epic Games)</h3>  
+            <p>I spent a short stint at this awesome game studio. I largely worked on a the multi-player mode for a gory first person shooter, <a href="https://youtu.be/K8F8-tVPMB4" target="_blank">Bulletstorm</a>. I also had a blast doing some early design explorations for Rocket League, the wild car meets soccer sensation.</p>
 
-        <h3>2011–2015</h3>
-        <strong>Smolio</strong>  
-        A friend and I would go all-in on a new startup idea. <a href="https://youtu.be/npCZNkPLOpc" target="_blank">Smolio</a> was a simple portfolio builder for creatives. We built a pretty cool product but like most startups, spent too much time focused on building and not enough on distribution and finding customers. Lesson learned.
+            <p>I also learned a lot here about working with a remote team while we collaborated with the awesome folks in Poland at People Can Fly.</p>
 
-        <strong>Simple Goods</strong>  
-        Over the course of a few weeks I decided to hack on a creator economy (no one called it that then) / ecommerce product after my experiencing trying to sell videos online with 3dmotive. My <a href="https://youtu.be/k8ABxhFvhiY" target="_blank">prototype</a> was pretty solid. I'd go on to find a co-founder and even apply to Techstars (and not get in). After a while with only a little traction to show, <a href="https://simplegoods.co/" target="_blank">Simple Goods</a> would be relegated to side project status. It would later be revived and sold. 
+            <h2>2011–2015</h2>
+            <h3>Smolio</h3>  
+            <p>A friend and I would go all-in on a new startup idea. <a href="https://youtu.be/npCZNkPLOpc" target="_blank">Smolio</a> was a simple portfolio builder for creatives. We built a pretty cool product but like most startups, spent too much time focused on building and not enough on distribution and finding customers. Lesson learned.</p>
 
-        <strong>We Are Altitude</strong>  
-        A good friend and I built, scaled up, and ran a remote product/design agency. We worked with a lot of funded startups building their first MVPs. We also helped more established companies explore new lines of business or vision prototypes. Running an agency is hard work. You get good/fast at understanding different types of businesses, business models, markets, and managing a team of radically different skillsets. The downside is that you never get to see a product through to several iterations.
+            <h3>Simple Goods</h3>  
+            <p>Over the course of a few weeks I decided to hack on a creator economy (no one called it that then) / ecommerce product after my experiencing trying to sell videos online with 3dmotive. My <a href="https://youtu.be/k8ABxhFvhiY" target="_blank">prototype</a> was pretty solid. I'd go on to find a co-founder and even apply to Techstars (and not get in). After a while with only a little traction to show, <a href="https://simplegoods.co/" target="_blank">Simple Goods</a> would be relegated to side project status. It would later be revived and sold.</p>
 
-        <strong>re:splashed</strong>  
-        This was a fun side project that <a href="https://tdub.co/blog/building-resplashed" target="_blank">implemented search and tagging</a> on top <a href="https://unsplash.com/" target="_blank">Unsplash</a> images. Remember when those were just a zip of images you'd get via email every week or so? I went on to sell this side project to fund other adventures.
+            <h3>We Are Altitude</h3>  
+            <p>A good friend and I built, scaled up, and ran a remote product/design agency. We worked with a lot of funded startups building their first MVPs. We also helped more established companies explore new lines of business or vision prototypes. Running an agency is hard work. You get good/fast at understanding different types of businesses, business models, markets, and managing a team of radically different skillsets. The downside is that you never get to see a product through to several iterations.</p>
 
-        <h3>2016–2021</h3>
-        <strong>Buffer</strong>  
-        I joined Buffer and spent the first few years building <a href="http://web.archive.org/web/20190108235610/https://buffer.com/reply/" target="_blank">Reply</a>, an inbox for social media. As a GM I learned a ton about dogfooding your own product, founder-led sales, iterative product development, and again, building and working with a remote team.
+            <h3>re:splashed</h3>  
+            <p>This was a fun side project that <a href="https://tdub.co/blog/building-resplashed" target="_blank">implemented search and tagging</a> on top <a href="https://unsplash.com/" target="_blank">Unsplash</a> images. Remember when those were just a zip of images you'd get via email every week or so? I went on to sell this side project to fund other adventures.</p>
 
-        I then went on to build, grow, and lead the Design and Product teams at Buffer where I've helped the company cross the chasm from single to multi product. 
+            <h2>2016–2021</h2>
+            <h3>Buffer</h3>  
+            <p>I joined Buffer and spent the first few years building <a href="http://web.archive.org/web/20190108235610/https://buffer.com/reply/" target="_blank">Reply</a>, an inbox for social media. As a GM I learned a ton about dogfooding your own product, founder-led sales, iterative product development, and again, building and working with a remote team.</p>
 
-        I had the opportunity of working with product data at scale and had a front row seat in a SaaS growing from low single digit millions in ARR to over $20M ARR. 
+            <p>I then went on to build, grow, and lead the Design and Product teams at Buffer where I've helped the company cross the chasm from single to multi product.</p>
 
-        <strong>Dundun</strong>  
-        A side project I built to manage my own tasks. Includes an <a href="https://github.com/twanlass/dundun-api" target="_blank">API</a> and a <a href="https://github.com/twanlass/dundun" target="_blank">native Mac app</a> as well as a <a href="https://getdundun.com/signup" target="_blank">web version</a>.
+            <p>I had the opportunity of working with product data at scale and had a front row seat in a SaaS growing from low single digit millions in ARR to over $20M ARR.</p>
 
-        <strong>Hundo</strong>  
-        <a href="https://usehundo.com/" target="_blank">Hundo</a> was a Shopify reviews app. This started as a side-project with a close friend to Explore the Shopify ecosystem. Like many things in life, the Shopify user base is a power law. This fact has a fascinating effect on the types of Shopify apps that will succeed. 
+            <h3>Dundun</h3>  
+            <p>A side project I built to manage my own tasks. Includes an <a href="https://github.com/twanlass/dundun-api" target="_blank">API</a> and a <a href="https://github.com/twanlass/dundun" target="_blank">native Mac app</a> as well as a <a href="https://getdundun.com/signup" target="_blank">web version</a>.</p>
 
-        <h3>2022–2023</h3>
-        <strong>Simple Goods</strong>  
-        I sold my SaaS <a href="https://simplegoods.co" target="_blank">Simple Goods</a>. 
+            <h3>Hundo</h3>  
+            <p><a href="https://usehundo.com/" target="_blank">Hundo</a> was a Shopify reviews app. This started as a side-project with a close friend to Explore the Shopify ecosystem. Like many things in life, the Shopify user base is a power law. This fact has a fascinating effect on the types of Shopify apps that will succeed.</p>
 
-        <strong>Renovating Old Houses</strong>  
-        I self-published a book – <a href="https://oldhousebook.com/?&utm_source=tdub.co" target="_blank">Renovating Old Houses</a>. 
+            <h2>2022–2023</h2>
+            <h3>Simple Goods</h3>  
+            <p>I sold my SaaS <a href="https://simplegoods.co" target="_blank">Simple Goods</a>.</p>
 
-        <strong>Unframes</strong>  
-        I had some fun with <a href="https://unfram.es/" target="_blank">Unframes</a>. 
+            <h3>Renovating Old Houses</h3>  
+            <p>I self-published a book – <a href="https://oldhousebook.com/?&utm_source=tdub.co" target="_blank">Renovating Old Houses</a>.</p>
 
-        <strong>Command AI</strong>  
-        I joined a series A startup as employee #8 ✌️
+            <h3>Unframes</h3>  
+            <p>I had some fun with <a href="https://unfram.es/" target="_blank">Unframes</a>.</p>
 
-        <h3>2024</h3>
-        <strong>Death 2 Lorem</strong>  
-        A simple Figma plugin to generate, translate, and rewrite text with the power of OpenAI
+            <h3>Command AI</h3>  
+            <p>I joined a series A startup as employee #8 ✌️</p>
 
-        <strong>Command AI → Amplitude</strong>
-        Amplitude acquired Command AI -->
+            <h2>2024</h2>
+            <h3>Death 2 Lorem</h3>  
+            <p>A simple Figma plugin to generate, translate, and rewrite text with the power of OpenAI</p>
+
+            <h3>Command AI → Amplitude</h3>
+            <p>Amplitude acquired Command AI</p>
+        </article>
 
     </div>
 </LayoutPage>

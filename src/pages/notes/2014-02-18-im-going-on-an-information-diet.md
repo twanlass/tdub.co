@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "I'm Going on an (Information) Diet"
+date: 2014-02-18
+tags: ['productivity']
 ---
 
 It's been 14 days since I've disconnected from the larger grid.
@@ -30,4 +32,6 @@ My wife is even giving it a go too. What's worse than competing against a smart 
 
 The last thing I want to highlight though is that this isn't about ultra efficiency and cramming more productive work hours into the day. For me it's quite the opposite. I want to work less and spend more quality time doing the things I love. Removing a lot of the above has helped me to do just that by freeing up several hours per day.
 
-'Editors' footnote - since starting my diet Facebook has sent me 12 (TWELVE!!) emails about missed status updates, group invites and messages. Wow.
+---
+
+<sup>1</sup>Since starting my diet Facebook has sent me 12 (TWELVE!!) emails about missed status updates, group invites and messages. Wow.

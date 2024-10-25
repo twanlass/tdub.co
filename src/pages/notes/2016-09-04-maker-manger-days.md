@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: 'How to Get Sh*t Done When You’re Building a Startup'
+date: 2016-09-04
+tags: ['product', 'startups']
 ---
 
 As a startup grows it’s only natural that some founders and early employees will slowly transition from _making things_ to _managing things_.

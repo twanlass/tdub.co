@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "Be Deliberate"
+date: 2012-07-26
+tags: ['life']
 ---
 
 Some of the happiest (and often most ‘successful’) people I know are also the most focused and deliberate about how they spend their time and whom they surround themselves with. 

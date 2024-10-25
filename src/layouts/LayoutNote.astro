@@ -1,0 +1,42 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Nav from "../components/Nav.astro";
+
+const { frontmatter } = Astro.props;
+// Convert the date to a more readable format
+const readableDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const tags = frontmatter.tags && frontmatter.tags.length > 0 ? frontmatter.tags.map(tag => `#${tag.replace(/\s+/g, '-')}`).join(' ') : '';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={frontmatter.title} />
+  </head>
+
+  <body class="bg-white subpixel-antialiased">
+    <main class="container mx-auto px-4 lg:px-6 lg:pt-20 max-w-screen-xl">
+      <Nav></Nav>
+      <div class="hero flex flex-col items-center gap-8 my-16 lg:my-[96px]">
+          <div class="flex flex-col items-center gap-2 w-2/3 mb-8">
+              <div class="flex gap-6 text-[16px] lg:text-[18px] font-[360] text-[#909090] -tracking-[.8px]">
+                <p>{readableDate}</p>
+              </div>
+              <h1 class="text-[32px] lg:text-[56px] font-[590] leading-[115%] -tracking-[1px] text-center" style="text-wrap: balance;">
+                  {frontmatter.title}
+              </h1>
+              <div class="flex gap-6 text-[16px] lg:text-[18px] font-[360] text-[#909090] -tracking-[.8px] uppercase">
+                <p>{tags}</p>
+              </div>
+          </div>  
+          <article class="max-w-prose mx-auto">
+            <slot />
+          </article>
+      </div>
+    </main>  
+  </body>
+</html>

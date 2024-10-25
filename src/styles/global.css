@@ -6,24 +6,74 @@
     :root {
         font-family: Inter, sans-serif;
         font-feature-settings: 'liga' 1, 'calt' 1, 'zero' 1, 'ss03' 1, 'tnum' 1;
-      }
-      @supports (font-variation-settings: normal) {
+    }
+
+    @supports (font-variation-settings: normal) {
         :root { font-family: InterVariable, sans-serif; }
-      }
+    }
 
-      body {
+    body {
         color: #232323;
-      }
+    }
 
-      a {
+    a {
         text-decoration: underline;
-      }
+    }
 
-      .thin-strike {
+    article h2 {
+        @apply text-[24px] font-[480] mb-2 mt-6;
+    }
+
+    article h3 {
+        @apply text-[20px] font-[480] mb-2 mt-6;
+    }
+
+    article p {
+        @apply text-[16px] lg:text-[18px] font-[360] mb-4 max-w-prose;
+    }
+
+    article strong {
+        @apply font-[520];
+    }
+
+    article ul,
+    article ol {
+        @apply ml-4;
+    }
+
+    article ul {
+        @apply mb-4 list-disc;
+    }
+
+    article ol {
+        @apply mb-4 list-decimal;
+    }
+
+    article li {
+        @apply text-[16px] lg:text-[18px] font-[360] mb-1;
+    }
+
+    article li::marker {
+        margin-right: 8px;
+    }
+
+    article blockquote {
+        @apply bg-gray-100 p-6 mb-4;
+    }
+
+    article blockquote p {
+        @apply mb-0;
+    }
+
+    article hr {
+        @apply my-8;
+    }
+
+    .thin-strike {
         @apply relative line-through lg:no-underline;
-      }
+    }
 
-      .thin-strike::before {
+    .thin-strike::before {
         @apply hidden lg:inline relative;
         content: "";
         position: absolute;
@@ -33,13 +83,13 @@
         height: 2px;
         background-color: #909090;
         transform: rotate(-.5deg);
-      }
+    }
 
-      ::selection {
+    ::selection {
         background-color: #FDD19B;
         color: #000;
         @apply blur-none;
-      }
+    }
 
     .img-transform {
         transform-style: preserve-3d;

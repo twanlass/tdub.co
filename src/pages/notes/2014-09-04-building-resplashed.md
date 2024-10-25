@@ -1,9 +1,11 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "Case Study: Building re:splashed"
+date: 2014-09-04
+tags: ['case study', 'product', 'design']
 ---
 
-<div><p><strong>Update:</strong> as of September 2016 I've sold <a href="http://resplashed.com">re:splashed</a>. It was time to find a new home for the side project and make room for some new ones.</p></div>
+<div><p><strong>Update:</strong> as of September 2016 I've sold <a href="http://resplashed.com">re:splashed</a>. It was time to find a new home for the side project and make room for some new ones. ✌️</p></div>
 
 ---
 

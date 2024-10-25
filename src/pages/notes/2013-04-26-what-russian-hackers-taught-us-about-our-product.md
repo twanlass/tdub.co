@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "What Russian Hackers Taught Us About Our Product"
+date: 2013-04-26
+tags: ['startups']
 ---
 
 Like so many others, my first “real” startup had it’s fair share of train wrecks. Given the hundreds of small decisions you have to make each day you’re bound to mess up a few and choose the wrong track.

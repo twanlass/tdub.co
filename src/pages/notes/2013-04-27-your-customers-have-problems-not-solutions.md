@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "Your Customers Have Problems, Not Solutions"
+date: 2013-04-27
+tags: ['product', 'startups', 'design']
 ---
 
 Ever received a feature request from a customer? Maybe they were kind enough to include a solution or how they think the feature should work?

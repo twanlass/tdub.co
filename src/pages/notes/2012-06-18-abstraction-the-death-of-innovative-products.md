@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "Abstraction and The Death of Innovative Products"
+date: 2012-06-19
+tags: ['product', 'startups']
 ---
 
 Building a new app or product these days is considerably easier than it was just 10 years ago. Middleware, open source and forks are abound. But today, most developers, designers and entrepreneurs wouldn’t dream of building a new library, server foundation or core technology to create their next upcoming product. 

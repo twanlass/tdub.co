@@ -1,11 +1,14 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: 'Mimimum Viable Case Studies'
+date: 2023-11-14
+tags: ['design', 'hiring']
 ---
 
 Case studies suck to create as a designer and are awful to read for hiring managers. Here's a few tips on what you can do instead.
 
-### A simple outline to follow:
+## A simple outline to follow:
+
 * TL;DR project headline
 * Role + team
 * Final result screenshot (give hiring manager motivation to continue)
@@ -19,7 +22,7 @@ Case studies suck to create as a designer and are awful to read for hiring manag
 > **A real example:**  
 > Here's [the exact PDF portfolio](https://www.dropbox.com/s/vpoc6sc8oyzwwgd/Tyler-Wanlass-Portfolio-Samples-2022.pdf?dl=0) I used to land a lead product design role.
 
-### Things that you absolutely need, aka the minimum viable case study:
+## Things that you absolutely need, aka the minimum viable case study:
 
 * **TL;DR project headline** – 1 sentence on what this thing is. I.e. "A SaaS app that helps agencies track their SEO efforts across thousands of keywords."
 * **Role + Team** – your role and the other roles involved in this project. I.e. "Role: Product Designer. Team: 2x Engineers, 1x Product Manager"
@@ -35,7 +38,7 @@ Case studies suck to create as a designer and are awful to read for hiring manag
 * **Outcomes** – stats are fine, but without context, numbers aren't super helpful. Qualitative outcomes are totally acceptable. I.e. "this prototype helped to secure an early customer."
 * **2-3 process images** – this could be wireframes, a tidy(!) sketch, customer journey map, design variations, overview of a design system, zoomed out screenshot of your messy Figma – anything. Don't go into the weeds here though. Your process isn't your key differentiator.
 
-### General portfolio tips:
+## General portfolio tips:
 * Figma embeds, prototypes, videos, etc are fine, but start with static screenshots first. Those are so much easier for a hiring manager to scan. Think of this stuff as extra / good for the appendix/footnotes.
 * Keep your website simple. A poorly executed website is way worse than a "boring" one. Your work should be the highlight. Not a fancy nav menu, dark mode, or transition animations (unless maybe you're a web designer 😁).
 * I personally hate Figma prototype portfolios. They take forever to load. I also just use arrow keys to move through them like slides.
@@ -44,14 +47,14 @@ Case studies suck to create as a designer and are awful to read for hiring manag
 * Curate your work. Quality is more important than quantity for 99% of roles.
 * If there were multiple designers on the project be super duper clear about what work you specifically did. Even better, try and show only final assets that you produced if you can.
 
-### Portfolio case study VS interview case study
+## Portfolio case study VS interview case study
 First, these don't have to be the same thing. Case studies in your portfolio can be higher level, lighter, simpler. If you're asked to present a case study during an interview you then have options.  
 
 Simplest option is to add a "talk track" to your case study. During your interview have talking points ready to share about the work as you walk through it.  
 
 A more complex option is to pick one of your case studies and expand it. Add more detail, more media, etc.
 
-### Footnote: who the heck are you?  
+## Footnote: who the heck are you?  
 **TL:DR:**  I've hired 20+ designers (mostly product + brand) and reviewed well over 10,000 portfolios.  
 
 I currently lead product + design [at a Series A startup](https://commandbar.com/). Prior to that I was VP of Design at [Buffer](https://buffer.com/). And prior to that I ran a product design agency for years.

@@ -1,6 +1,8 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/LayoutNote.astro
 title: "2013 - A Year In Review"
+date: 2013-12-31
+tags: ['review']
 ---
 
 I love the idea of the end-of-year post. It's a great time to reflect on where you're at and where you're going. For me, 2013 was a turning point. I saw major growth in myself, my relationships and generally got much closer to my bigger goals.

@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 
 const { frontmatter } = Astro.props;
 // Convert the date to a more readable format
@@ -29,7 +30,7 @@ const tags = frontmatter.tags && frontmatter.tags.length > 0 ? frontmatter.tags.
               <h1 class="text-[32px] lg:text-[56px] font-[590] leading-[115%] -tracking-[1px] text-center" style="text-wrap: balance;">
                   {frontmatter.title}
               </h1>
-              <div class="flex gap-6 text-[16px] lg:text-[18px] font-[360] text-[#909090] -tracking-[.8px] uppercase">
+              <div class="flex gap-6 text-[18px] lg:text-[16px] font-[360] text-[#909090] uppercase">
                 <p>{tags}</p>
               </div>
           </div>  
@@ -37,6 +38,7 @@ const tags = frontmatter.tags && frontmatter.tags.length > 0 ? frontmatter.tags.
             <slot />
           </article>
       </div>
+      <Footer></Footer>
     </main>  
   </body>
 </html>

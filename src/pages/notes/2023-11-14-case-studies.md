@@ -54,8 +54,9 @@ Simplest option is to add a "talk track" to your case study. During your intervi
 
 A more complex option is to pick one of your case studies and expand it. Add more detail, more media, etc.
 
-## Footnote: who the heck are you?  
-**TL:DR:**  I've hired 20+ designers (mostly product + brand) and reviewed well over 10,000 portfolios.  
+---
 
-I currently lead product + design [at a Series A startup](https://commandbar.com/). Prior to that I was VP of Design at [Buffer](https://buffer.com/). And prior to that I ran a product design agency for years.
-This is just my take as both a designer and hiring manager. Your mileage will vary :-)
+## Footnote: who the heck are you?  
+**tl;dr:** I've hired 20+ designers (mostly product + brand) and reviewed well over 10,000 portfolios.  
+
+I've led product + design [at a Series A startup](https://commandbar.com/), was VP of Design at [Buffer](https://buffer.com/), and prior to that I ran a product design agency for years. This is just my take as both a designer and hiring manager. Your mileage will vary.

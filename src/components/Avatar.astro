@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+import avatar from "../images/2024/tw-avatar.png";
+---
+<Image 
+    src={avatar}
+    width={avatar.width / 2}
+    densities={[1.5, 2]}
+    class="select-none"
+    alt="Tyler Wanlass avatar" 
+    quality={100}
+/>

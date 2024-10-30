@@ -59,8 +59,8 @@ const currentUrl = Astro.url.pathname;
 </nav>
 
 <div class="lg:hidden w-full fixed bottom-0 left-0 z-10 p-2">
-    <div class="text-[16px] flex h-12 items-center w-full px-3 gap-1 text-white bg-black/70 backdrop-blur-md rounded-md">
-        <div class="rotate-90 text-[#909090]"></div>
+    <div class="text-[16px] flex h-12 items-center w-full px-3 gap-1 text-white bg-black/50 backdrop-blur-md rounded-md">
+        <div class="rotate-90 text-white/70"></div>
         <select class="appearance-none bg-transparent w-full focus:outline-none" onchange="location = this.value;" value={currentUrl}>
             <option value="/" selected={currentUrl === '/'}>Home</option>
             <option value="/#design" selected={currentUrl.includes('design')}>Design</option>

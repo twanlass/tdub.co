@@ -6,6 +6,7 @@ import TableSection from  '../components/tableSection.astro';
 import Table from '../components/table.astro';
 import TableRow from '../components/tableRow.astro';
 import Avatar from '../components/Avatar.astro';
+import Button from '../components/Button.astro';
 
 // page assets
 import circled from "../images/2024/circled.svg";
@@ -33,8 +34,8 @@ import nav from "../images/2024/work/command-ai/nav.png";
     <div class="hero flex flex-col gap-8 lg:gap-[96px] my-8 lg:my-24 text-center lg:text-left items-center lg:items-start">
         <Avatar></Avatar>
         <div>
-            <h1 class="text-[28px] lg:text-[40px] font-[557] leading-[115%] -tracking-[1px] mb-4 text-balance" style="text-wrap: balance;">
-            Tyler is a software designer, builder, and recovering engineer from the Pacific Northwest.
+            <h1 class="text-[28px] lg:text-[64px] font-[380] leading-[108%] -tracking-[.75px] mb-4 text-balance" style="text-wrap: balance;">
+            Tyler is a product designer, builder, and <span class="text-[#909090]">recovering software engineer</span> from the Pacific Northwest.
             </h1>
             <div class="text-[20px] lg:text-[22px] text-[#909090] font-[338] -tracking-[.8px]" style="text-wrap: balance;">Likes: design, code, running, old houses, history, and learning new things.</div>
         </div>
@@ -51,17 +52,22 @@ import nav from "../images/2024/work/command-ai/nav.png";
         <!-- Section: CV -->
         <TableSection title="Work">
             <Table>
-                <TableRow date="2024 – Now" title="Design ✌️" subtitle="Amplitude" subtitleLink="https://amplitude.com" tag="SaaS">
-                    <div class="w-2 h-2 bg-[#EFE500] absolute -left-[184px] top-[10px] animate-ping"></div>
-                    <div class="w-2 h-2 bg-[#EFE500] absolute -left-[184px] top-[10px]"></div>
+                <TableRow date="2024 – Now" title="Design ✌️" subtitle="Amplitude" subtitleLink="https://amplitude.com">
+                    <div slot="after-title">
+                        <div class="w-2 h-2 bg-[#EFE500] absolute -left-[184px] top-[10px] animate-ping"></div>
+                        <div class="w-2 h-2 bg-[#EFE500] absolute -left-[184px] top-[10px]"></div>
+                    </div>
                 </TableRow>
-                <TableRow date="2022 – 2024" title="Lead Product Designer" subtitle="Command AI (Acquired)" subtitleLink="https://command.ai" tag="SaaS" />
-                <TableRow date="2016 – 2021" title="VP of Design" subtitle="Buffer" subtitleLink="https://buffer.com" tag="SaaS" />
-                <TableRow date="2013 – 2016" title="Co-founder, Principal Designer" subtitle="We Are Altitude" tag="Agency" />
-                <TableRow date="2012 – 2012" title="Entrepreneur in Residence" subtitle="CreativeHQ" tag="Startup accelerator" />
-                <TableRow date="2010 – 2012" title="Co-founder" subtitle="3dmotive / SaaS" />
-                <TableRow date="2006 – 2011" title="Level Designer" subtitle="Activision, Epic Games" tag="Games" />
+                <TableRow date="2022 – 2024" title="Lead Product Designer" subtitle="Command AI" subtitleLink="https://command.ai">
+                    <div slot="after-link">
+                        &nbsp;(acquired by Amplitude)
+                    </div>
+                </TableRow>                    
+                <TableRow date="2016 – 2021" title="VP of Design" subtitle="Buffer" subtitleLink="https://buffer.com" />
+                <TableRow date="2013 – 2016" title="Co-founder, Principal Designer" subtitle="We Are Altitude" />
+                <TableRow date="2012 – 2012" title="Entrepreneur in Residence" subtitle="CreativeHQ" />
             </Table>
+            <Button title="LinkedIn" link="https://www.linkedin.com/in/twanlass/"></Button>
         </TableSection>
 
         <!-- Section: Speaking -->

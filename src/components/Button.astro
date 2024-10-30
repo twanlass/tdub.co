@@ -1,0 +1,9 @@
+---
+const { title, link, target = '_blank' } = Astro.props;
+---
+<div class="h-8 lg:h-10 inline-flex justify-start select-none">
+    <a class="text-[16px] lg:text-[18px] hover:text-[#6A6A6A] gap-2 px-4 h-full flex items-center justify-center no-underline rounded-full border border-[#232323] hover:border-[#6A6A6A] transition-all" href={link} target{target}>
+        {title}
+        <span class="relative -top-[1px]">↗</span>
+    </a>
+</div>

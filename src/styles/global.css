@@ -58,7 +58,7 @@
     }
 
     article blockquote {
-        @apply bg-gray-100 p-6 mb-4;
+        @apply bg-[#fef4e9] px-6 py-3 mb-4 border-l-[4px] border-[#f2cea7];
     }
 
     article blockquote p {

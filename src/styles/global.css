@@ -6,6 +6,12 @@
     :root {
         font-family: Inter, sans-serif;
         font-feature-settings: 'liga' 1, 'calt' 1, 'zero' 1, 'ss03' 1, 'tnum' 1;
+        
+        /* anim default values */
+        --translate-y: 100%;
+        --scale: 1;
+        --blur: 0;
+        --delay: 0s;
     }
 
     @supports (font-variation-settings: normal) {
@@ -105,11 +111,69 @@
         filter: drop-shadow(0px 4px 4px rgba(0,0,0,.12));
     }
 
-    .active .nav-underline {
-        @apply block;
+    .nav-underline {
+        opacity: 0;
     }
 
-    .nav-underline svg {
-        width: 100%;
+    .active .nav-underline {
+        animation: Underline .24s cubic-bezier(.7,0,.3,1) forwards;
     }
+
+    .anim-entry {
+        opacity: 0;
+        animation: Entry var(--duration) cubic-bezier(.7,0,.3,1) forwards;
+        animation-delay: var(--delay);
+    }
+
+    .anim--avatar {
+        --blur: 24px;
+        --delay: .1s;
+        --duration: .7s;
+        --translate-y: 50%;
+    }
+
+    .anim--headline {
+        --blur: 24px;
+        --delay: .35s;
+        --duration: .95s;
+        --translate-y: 25%;
+    }
+
+    .anim--byline {
+        --blur: 24px;
+        --delay: .8s;
+        --duration: 1s;
+        --translate-y: 50%;   
+    }
+
+    .anim--h1 {
+        --blur: 16px;
+        --delay: .45s;
+        --duration: .5s;
+        --translate-y: 25%;
+    }
+
+    @keyframes Underline {
+        0% {
+            opacity: 0;
+            width: 0%;
+        }
+        100% {
+            opacity: 1;
+            width: 100%; 
+        }
+    }
+
+    @keyframes Entry {
+        0% {
+          opacity: 0;
+          transform: translateY(var(--translate-y)) scale(1);
+          filter: blur(var(--blur));
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+          filter: blur(0);
+        }
+      }      
   }

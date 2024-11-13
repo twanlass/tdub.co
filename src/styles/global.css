@@ -146,6 +146,13 @@
         --translate-y: 50%;   
     }
 
+    .anim-tldr {
+        --blur: 24px;
+        --delay: .8s;
+        --duration: 2s;
+        --translate-y: 50%;   
+    }
+
     .anim--h1 {
         --blur: 16px;
         --delay: .45s;

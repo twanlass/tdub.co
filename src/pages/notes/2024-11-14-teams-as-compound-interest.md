@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/LayoutNote.astro
-title: 'Stable teams are like compound interest'
+title: 'Stable teams = compound interest'
 date: 2024-11-14
 tags: ['product']
 ---

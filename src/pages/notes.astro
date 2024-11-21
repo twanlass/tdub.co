@@ -2,9 +2,10 @@
 import LayoutPage from "../layouts/LayoutPage.astro";
 import Avatar from '../components/Avatar.astro';
 const allPosts = await Astro.glob('../pages/notes/*.md');
+let currentYear = null
 ---
 
-<LayoutPage title="Now">
+<LayoutPage title="Notes">
     <div class="hero flex flex-col gap-8 my-8 lg:my-16 lg:my-24">
         <Avatar></Avatar>
         <div class="flex flex-col gap-2">
@@ -12,17 +13,36 @@ const allPosts = await Astro.glob('../pages/notes/*.md');
                 Notes
             </h1>
         </div>
-        <ol class="list-none list-inside leading-loose text-[16px] lg:text-[18px] font-[360] divide-y divide-[#DCDCDC]">
-          {allPosts.reverse().map((post) => 
-            <li class="list-none mb-0">
-              <a 
-                class="no-underline text-[18px] lg:text-[22px] font-[325] tracking-[0.32px] hover:text-[#6A6A6A] transition-all block lg:flex group py-4 truncate"
-                href={post.url}>
-                {post.frontmatter.title} <span class="transition-all opacity-0 pl-0 group-hover:opacity-100 group-hover:pl-2">→</span>
-              </a>
-            </li>
-          )}
-        </ol>
+        <div class="anim-entry anim--body-subpage list-none list-inside leading-loose text-[16px] lg:text-[18px] font-[360] flex flex-col gap-8 lg:gap-16">
+          {Object.entries(
+            allPosts.reduce((acc, post) => {
+              const postYear = new Date(post.frontmatter.date).getFullYear();
+              if (!acc[postYear]) acc[postYear] = [];
+              acc[postYear].push(post);
+              return acc;
+            }, {})
+          )
+          .sort(([yearA], [yearB]) => yearB - yearA) // Sort years in descending order
+          .map(([year, posts]) => (
+            <div class="">
+              <h2 class="text-[14px] lg:text-[16px] font-[590] leading-[115%] -tracking-[.8px] mb-2">{year}</h2>
+              <ol class="text-[16px] lg:text-[18px] font-[360] divide-y divide-[#DCDCDC]">
+                {posts.reverse().map((post) => (
+                  <li class="list-none flex items-center gap-8 lg:gap-12 h-12 lg:h-14">
+                    <div class="whitespace-nowrap w-[72px] flex-none">
+                      {new Date(post.frontmatter.date).toLocaleDateString('en-US', { day: '2-digit', month: 'short' })}
+                    </div>                    
+                    <a 
+                      class="hover:text-[#6A6A6A] transition-all truncate"
+                      href={post.url}>
+                      {post.frontmatter.title}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
 
     </div>
 </LayoutPage>

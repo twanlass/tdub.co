@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/LayoutNote.astro
-title: 'Just add another setting?'
+title: 'Just add another setting'
 date: 2024-11-11
 tags: ['product']
 ---

@@ -160,6 +160,28 @@
         --translate-y: 25%;
     }
 
+    .anim--body-index {
+        --blur: 48px;
+        --delay: 1s;
+        --duration: 2s;
+        --translate-y: .25%;   
+    }
+
+    .anim--body-subpage {
+        --blur: 16px;
+        --delay: .25s;
+        --duration: 1.5s;
+        --translate-y: 2%;   
+    }
+
+    .anim--footer {
+        --blur: 16px;
+        --delay: .25s;
+        --duration: 1.5s;
+        --translate-y: 2%;   
+    }
+
+
     @keyframes Underline {
         0% {
             opacity: 0;

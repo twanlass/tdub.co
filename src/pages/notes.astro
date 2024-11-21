@@ -3,6 +3,14 @@ import LayoutPage from "../layouts/LayoutPage.astro";
 import Avatar from '../components/Avatar.astro';
 const allPosts = await Astro.glob('../pages/notes/*.md');
 let currentYear = null
+
+// todo: fix day offset / timezone shnans
+function formatPostDate(postDate) {
+  const date = new Date(postDate);
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+
 ---
 
 <LayoutPage title="Notes">
@@ -30,7 +38,10 @@ let currentYear = null
                 {posts.reverse().map((post) => (
                   <li class="list-none flex items-center gap-8 lg:gap-12 h-12 lg:h-14">
                     <div class="whitespace-nowrap w-[72px] flex-none">
-                      {new Date(post.frontmatter.date).toLocaleDateString('en-US', { day: '2-digit', month: 'short' })}
+
+                      {
+                        formatPostDate(post.frontmatter.date)
+                      }
                     </div>                    
                     <a 
                       class="hover:text-[#6A6A6A] transition-all truncate"

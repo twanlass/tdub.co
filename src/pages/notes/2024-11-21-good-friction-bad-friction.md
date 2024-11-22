@@ -13,7 +13,7 @@ Bad friction is asking question after question in an onboarding flow that has no
 
 Good friction is adding an extra step to a checkout flow to build trust when purchasing a high priced item. 
 
-Bad friction is asking for full shipping details in a checkout flow when somone is just trying to buy a downloadable proudct. 
+Bad friction is asking for full shipping details in a checkout flow when somone is just trying to buy a downloadable product. 
 
 Good friction is making it harder for users to perform undoable actions that could cause them to lose work.
 

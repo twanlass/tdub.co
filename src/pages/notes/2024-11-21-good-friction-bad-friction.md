@@ -30,12 +30,12 @@ Bad friction is interupting every user who signs in with a giant modal that says
 **Two parting thoughts:**
 
 1. Going from bad friction to good friction is often about shifting the "where and when" – move the friction point to where and when it’s impact will have the shortest user feedback loop. 
-2. Add good friciton to build trust that cam then remove fear, uncertainly, or doubts (FUDs). Yes, adding steps to flows can actually increase the conversion rates. 
+2. Add good friciton to build trust that can then remove fear, uncertainly, or doubts (FUDs). Yes, adding steps to flows can actually increase the conversion rates. 
 
 ---
 
 <div class="text-[14px] text-[#909090]">
-<p class="text-[14px] mb-1">Footnote:</p>
+<p class="text-[14px] mb-1">Footnotes:</p>
 <div class="flex flex-col gap-2">
     <div id="footnote2">
         <a id="footnote1">1.</a> Assuming you’ve built a great product people actually want to use (or their boss forces them to use), you’ll have plenty more changes to ask them questions like “how big is your team?” or “Do you want Sales to spam your inbox?."

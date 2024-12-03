@@ -181,6 +181,26 @@
         --translate-y: 2%;   
     }
 
+    .anim-path {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 0;
+        animation: Path 5s cubic-bezier(.7,0,.3,1) forwards;
+        animation-delay: .6s;
+        opacity: 0%;
+    }
+      
+    @keyframes Path {
+        
+        from {
+            opacity: 100%;
+            stroke-dashoffset: 822;
+        }
+        to {
+            opacity: 100%;
+            stroke-dashoffset: 0;
+        }
+      }
+
 
     @keyframes Underline {
         0% {

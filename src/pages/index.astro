@@ -82,11 +82,13 @@ import nav from "../images/2024/work/command-ai/nav.png";
         <TableSection title="Side projects">
             <Table>
                 <TableRow date="2024" title="Death 2 Lorem" titleLink="https://death2lorem.com" subtitle="Figma gen AI plugin">
-                    <Image 
-                        src={d2lLogo}
-                        class="absolute -top-2 left-[138px] rotate-6 drop-shadow-xl hidden lg:block"
-                        alt="Death 2 Lorem" 
-                    />
+                    <div slot="after-title">
+                        <Image 
+                            src={d2lLogo}
+                            class="absolute -top-2 left-[138px] rotate-6 drop-shadow-xl hidden lg:block"
+                            alt="Death 2 Lorem" 
+                        />                        
+                    </div>
                 </TableRow>
                 <TableRow date="2022" title="Simple Goods" titleLink="https://simplegoods.co" subtitle="Ecommerce SaaS (Acquired)" />
                 <TableRow date="2022" title="Renovating Old Houses" titleLink="https://oldhousebook.com/" subtitle="Ebook" />

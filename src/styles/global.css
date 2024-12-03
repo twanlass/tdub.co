@@ -27,11 +27,11 @@
     }
 
     article h2 {
-        @apply text-[24px] font-[480] mb-2 mt-6;
+        @apply text-[20px] lg:text-[24px] font-[480] mb-2 mt-6;
     }
 
     article h3 {
-        @apply text-[20px] font-[480] mb-2 mt-2;
+        @apply text-[18px] lg:text-[20px] font-[480] mb-2 mt-2;
     }
 
     article p {
@@ -44,7 +44,7 @@
 
     article ul,
     article ol {
-        @apply ml-4;
+        @apply ml-6;
     }
 
     article ul {

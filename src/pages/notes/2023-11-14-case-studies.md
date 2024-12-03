@@ -56,7 +56,11 @@ A more complex option is to pick one of your case studies and expand it. Add mor
 
 ---
 
-## Footnote: who the heck are you?  
-**tl;dr:** I've hired 20+ designers (mostly product + brand) and reviewed well over 10,000 portfolios.  
+<div class="text-[14px] text-[#909090]">
+<p class="text-[14px] mb-1">Footnote: who the heck are you?</p>
 
-I've led product + design [at a Series A startup](https://commandbar.com/), was VP of Design at [Buffer](https://buffer.com/), and prior to that I ran a product design agency for years. This is just my take as both a designer and hiring manager. Your mileage will vary.
+<p class="text-[14px] mb-1"><strong>Tl;dr:</strong> I've hired 20+ designers (mostly product + brand) and reviewed well over 10,000 portfolios.</p>
+
+<p class="text-[14px] mb-1">I've led product + design at a <a href="https://commandbar.com" target="_blank">series a startup</a>, was VP of Design at <a href="https://buffer.com" target="_blank">Buffer</a>, and prior to that I ran a product design agency for years. This is just my take as both a designer and hiring manager. Your mileage will vary.<p>
+
+</div>

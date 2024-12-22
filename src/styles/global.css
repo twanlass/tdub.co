@@ -75,6 +75,10 @@
         @apply my-8;
     }
 
+    article p img {
+        @apply p-4 bg-slate-50 rounded-md;
+    }
+
     .thin-strike {
         @apply relative line-through lg:no-underline;
     }

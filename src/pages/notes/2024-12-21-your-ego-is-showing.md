@@ -6,11 +6,11 @@ tags: ['product', 'design']
 ---
 While I was at [Buffer](https://buffer.com), I led a team building an inbox tool for social media. It was used by teams at Stripe, Slack, and DigitalOcean to manage @mentions, comments, and DMs on social media at scale.
 
-One of the more tedious parts of our customers' workflow was answering the same questions repeatedly. Naturally, it wasn’t long before we got feature requests for things like canned responses or automated replies.
+One of the more tedious parts of our customers' workflow was answering the same questions repeatedly. So naturally it wasn’t long before we got feature requests for things like canned responses or automated replies.
 
 I had a visceral reaction to building a feature that could enable sending tons of spammy or inauthentic messages at scale – let alone in a public forum like social media.
 
-Customers wanted to speed up their agents’ workflow and improve consistency in responses. That seemed fair! But I hated the idea of canned responses. I didn’t want our customers to want this feature. "Do better!" I thought. 
+Customers wanted to speed up their agent's workflow and improve consistency in responses. That seemed fair! But I hated the idea of canned responses. I didn’t want our customers to want this feature. "Do better!" I thought. 
 
 **My ego was showing.**
 
@@ -32,6 +32,6 @@ On the far left, your ego takes over and you dismiss customer requests out of ha
 
 On the far right, you blindly build whatever customers ask for. You don't think through the second order consequences or take into consideration the larger picture. 
 
-The hard part of course is doing something in the middle – solving customers’ problems _while_ being opinionated about the world you want to exist. 
+The hard part of course is doing something in the middle – solving customer's problems _while_ being opinionated about the world you want to exist. 
 
 Building the right thing is hard. But it's waaay harder when we're passing judgment on what we think customers should want.

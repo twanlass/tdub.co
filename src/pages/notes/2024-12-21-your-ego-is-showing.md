@@ -6,7 +6,7 @@ tags: ['product', 'design']
 ---
 While I was at [Buffer](https://buffer.com), I led a team building an inbox tool for social media. It was used by teams at Stripe, Slack, and DigitalOcean to manage @mentions, comments, and DMs on social media at scale.
 
-One of the more tedious parts of our customers' workflow was answering the same questions repeatedly. So naturally it wasn’t long before we got feature requests for things like canned responses or automated replies.
+One of the more tedious parts of our customer's workflow was answering the same questions repeatedly. So naturally it wasn’t long before we got feature requests for things like canned responses or automated replies.
 
 I had a visceral reaction to building a feature that could enable sending tons of spammy or inauthentic messages at scale – let alone in a public forum like social media.
 

@@ -30,7 +30,7 @@ const tags = frontmatter.tags && frontmatter.tags.length > 0 ? frontmatter.tags.
                   {frontmatter.title}
               </h1>
               <div class="flex flex-row gap-2 text-[14px] lg:text-[16px] font-[360] text-[#909090] uppercase">
-                <p>{readableDate}</p> <span class="hidden lg:block">‒</span> <p>{tags}</p>
+                <p class="whitespace-nowrap">{readableDate}</p> <span class="hidden lg:block">‒</span> <p class="whitespace-nowrap">{tags}</p>
               </div>
           </div>  
       </div>

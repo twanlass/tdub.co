@@ -4,7 +4,7 @@ title: 'Your ego is showing'
 date: 2024-12-21
 tags: ['product', 'design']
 ---
-While I was at [Buffer](https://buffer.com), I led a team building an inbox tool for social media. It was used by teams at Stripe, Slack, and DigitalOcean to manage @mentions, comments, and DMs on social media at scale.
+While I was at [Buffer](https://buffer.com), I led a team building an inbox tool for social media. It was used by teams at Stripe, Slack, and DigitalOcean to manage @mentions, comments, and DMs at scale.
 
 One of the more tedious parts of our customer's workflow was answering the same questions repeatedly. So naturally it wasn’t long before we got feature requests for things like canned responses or automated replies.
 

@@ -1,1 +1,5 @@
 node_modules/
+.DS_Store
+.claude/
+.astro/settings.json
+prompt-build-log.txt

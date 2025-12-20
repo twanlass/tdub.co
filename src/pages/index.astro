@@ -11,6 +11,7 @@ import Button from '../components/Button.astro';
 // page assets
 import circled from "../images/2024/circled.svg";
 import d2lLogo from "../images/2024/logo-death-2-lorem.svg";
+import shadeLogo from "../images/2025/logo-shade-app.svg";
 
 // work
 import analyticsChats from "../images/2024/work/command-ai/analytics-chats.png";
@@ -34,7 +35,7 @@ import nav from "../images/2024/work/command-ai/nav.png";
         <Avatar></Avatar>
         <div>
             <h1 class="anim-entry anim--headline text-[28px] lg:text-[64px] font-[380] leading-[104%] -tracking-[.75px] mb-4 text-balance" style="text-wrap: balance;">
-            Tyler is a software product designer and leader from the Pacific Northwest.
+            Tyler is a software product builder and leader from the Pacific Northwest.
             </h1>
             <div class="anim-entry anim--byline text-[20px] lg:text-[22px] text-[#909090] font-[338] -tracking-[.8px]" style="text-wrap: balance;">Likes: design, code, running, old houses, history, and learning new things.</div>
         </div>
@@ -63,10 +64,38 @@ import nav from "../images/2024/work/command-ai/nav.png";
                     </div>
                 </TableRow>                    
                 <TableRow date="2016 – 2021" title="VP of Design" subtitle="Buffer" subtitleLink="https://buffer.com" />
-                <TableRow date="2013 – 2016" title="Co-founder, Principal Designer" subtitle="We Are Altitude" />
+                <TableRow date="2013 – 2016" title="Co-founder + Principal Designer" subtitle="We Are Altitude" />
                 <TableRow date="2012 – 2012" title="Entrepreneur in Residence" subtitle="CreativeHQ" />
             </Table>
             <Button title="LinkedIn" link="https://www.linkedin.com/in/twanlass/"></Button>
+        </TableSection>
+
+        <!-- Section: Side projects -->
+        <TableSection title="Side projects">
+            <Table>
+                <TableRow date="2026" title="Shade" titleLink="https://tryshade.app" subtitle="Simple MacOS focus app">
+                    <div slot="after-title">
+                        <Image 
+                            src={shadeLogo}
+                            class="absolute -top-2 left-[68px] w-[34px] h-[34px] rotate-6 drop-shadow-xl hidden lg:block"
+                            alt="Shade App icon" 
+                        />                        
+                    </div>
+                </TableRow>
+                <TableRow date="2025" title="Nudges" titleLink="https://nudges.today" subtitle="Nudge UI swipe file" />
+                <TableRow date="2024" title="Death 2 Lorem" titleLink="https://death2lorem.com" subtitle="Figma gen AI plugin">
+                    <div slot="after-title">
+                        <Image 
+                            src={d2lLogo}
+                            class="absolute -top-2 left-[138px] rotate-6 drop-shadow-xl hidden lg:block"
+                            alt="Death 2 Lorem icon" 
+                        />                        
+                    </div>
+                </TableRow>
+                <TableRow date="2022" title="Simple Goods" titleLink="https://simplegoods.co" subtitle="Ecommerce SaaS (Acquired)" />
+                <TableRow date="2022" title="Renovating Old Houses" titleLink="https://oldhousebook.com/" subtitle="Ebook" />
+                <TableRow date="2022" title="Unframes" titleLink="https://unfram.es/" subtitle="Physical product" />
+            </Table>
         </TableSection>
 
         <!-- Section: Speaking -->
@@ -77,23 +106,6 @@ import nav from "../images/2024/work/command-ai/nav.png";
             </Table>
         </TableSection>
         
-        <!-- Section: Side projects -->
-        <TableSection title="Side projects">
-            <Table>
-                <TableRow date="2024" title="Death 2 Lorem" titleLink="https://death2lorem.com" subtitle="Figma gen AI plugin">
-                    <div slot="after-title">
-                        <Image 
-                            src={d2lLogo}
-                            class="absolute -top-2 left-[138px] rotate-6 drop-shadow-xl hidden lg:block"
-                            alt="Death 2 Lorem" 
-                        />                        
-                    </div>
-                </TableRow>
-                <TableRow date="2022" title="Simple Goods" titleLink="https://simplegoods.co" subtitle="Ecommerce SaaS (Acquired)" />
-                <TableRow date="2022" title="Renovating Old Houses" titleLink="https://oldhousebook.com/" subtitle="Ebook" />
-                <TableRow date="2022" title="Unframes" titleLink="https://unfram.es/" subtitle="Physical product" />
-            </Table>
-        </TableSection>
 
         <!-- Section: work -->
         <div class="section flex flex-col gap-6" id="design">

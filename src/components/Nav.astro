@@ -58,16 +58,18 @@ const currentUrl = Astro.url.pathname;
     </ul>
 </nav>
 
-<div class="lg:hidden w-full fixed bottom-0 left-0 z-10 p-2">
-    <div class="text-[16px] flex h-12 items-center w-full px-3 gap-1 text-white bg-black/50 backdrop-blur-md rounded-md">
-        <div class="rotate-90 text-white/70"></div>
-        <select class="appearance-none bg-transparent w-full focus:outline-none" onchange="location = this.value;" value={currentUrl}>
-            <option value="/" selected={currentUrl === '/'}>Home</option>
-            <option value="/#design" selected={currentUrl.includes('design')}>Design</option>
-            <option value="/notes" selected={currentUrl.includes('notes')}>Notes</option>
-            <option value="/principles" selected={currentUrl.includes('principles')}>Principles</option>
-            <option value="/timeline" selected={currentUrl.includes('timeline')}>Timeline</option>
-            <option value="/now" selected={currentUrl.includes('now')}>Now</option>
-        </select>
+<div class="lg:hidden w-full flex justify-center fixed bottom-[24px] left-0 z-10 p-2">
+    <div class="rounded-full inline-flex overflow-hidden border-1 border-black/60">
+        <div class="text-[16px] inline-flex h-12 items-center w-auto px-6 gap-1 text-white bg-black/50 backdrop-blur-md">
+            <div class="rotate-90 text-white/70"></div>
+            <select class="appearance-none bg-transparent w-auto focus:outline-none" onchange="location = this.value;" value={currentUrl}>
+                <option value="/" selected={currentUrl === '/'}>Home</option>
+                <option value="/#design" selected={currentUrl.includes('design')}>Design</option>
+                <option value="/notes" selected={currentUrl.includes('notes')}>Notes</option>
+                <option value="/principles" selected={currentUrl.includes('principles')}>Principles</option>
+                <option value="/timeline" selected={currentUrl.includes('timeline')}>Timeline</option>
+                <option value="/now" selected={currentUrl.includes('now')}>Now</option>
+            </select>
+        </div>
     </div>
 </div>

@@ -12,6 +12,7 @@ import Button from '../components/Button.astro';
 import circled from "../images/2024/circled.svg";
 import d2lLogo from "../images/2024/logo-death-2-lorem.svg";
 import shadeLogo from "../images/2025/logo-shade-app.svg";
+import grogLogo from "../images/2025/logo-grog.png";
 
 // work
 import analyticsChats from "../images/2024/work/command-ai/analytics-chats.png";
@@ -73,6 +74,15 @@ import nav from "../images/2024/work/command-ai/nav.png";
         <!-- Section: Side projects -->
         <TableSection title="Side projects">
             <Table>
+                <TableRow date="2026" title="Grog" titleLink="https://grog-rts.netlify.app" subtitle="A retro realtime strategy game">
+                    <div slot="after-title">
+                        <Image 
+                            src={grogLogo}
+                            class="absolute -top-2 left-[54px] w-[34px] h-[34px] rotate-6 hidden lg:block"
+                            alt="Grog icon" 
+                        />                        
+                    </div>
+                </TableRow>
                 <TableRow date="2026" title="Shade" titleLink="https://tryshade.app" subtitle="Simple MacOS focus app">
                     <div slot="after-title">
                         <Image 
@@ -92,7 +102,7 @@ import nav from "../images/2024/work/command-ai/nav.png";
                         />                        
                     </div>
                 </TableRow>
-                <TableRow date="2022" title="Simple Goods" titleLink="https://simplegoods.co" subtitle="Ecommerce SaaS (Acquired)" />
+                <TableRow date="2022" title="Simple Goods" titleLink="https://simplegoods.co" subtitle="SaaS App (Sold)" />
                 <TableRow date="2022" title="Renovating Old Houses" titleLink="https://oldhousebook.com/" subtitle="Ebook" />
                 <TableRow date="2022" title="Unframes" titleLink="https://unfram.es/" subtitle="Physical product" />
             </Table>

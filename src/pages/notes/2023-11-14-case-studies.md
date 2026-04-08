@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/LayoutNote.astro
-title: 'Mimimum Viable Case Studies'
+title: 'Minimum Viable Case Studies'
 date: 2023-11-14
 tags: ['design', 'hiring']
 ---
@@ -16,7 +16,7 @@ Case studies suck to create as a designer and are awful to read for hiring manag
 * Constraints – 3 bullet points
 * Process – 1-2 process images
 * Final result – 2-3 images
-* Outcome – 3 bullet points (qualittaive or quantitiatve)
+* Outcome – 3 bullet points (qualitative or quantitative)
 * Fin ✌️
 
 > **A real example:**  

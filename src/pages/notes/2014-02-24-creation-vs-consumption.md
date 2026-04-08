@@ -10,7 +10,7 @@ It's a rather simple idea to create more than you consume. In reality though it'
 
 How do you feel after these activities? Are you ready to get some real work done or create something great? I'm not. 
 
-All of these consumption experiences are are designed to keep you engaged for as long as possible. And it's no wonder we fall into these traps - It's so easy and really comfortable.
+All of these consumption experiences are designed to keep you engaged for as long as possible. And it's no wonder we fall into these traps - It's so easy and really comfortable.
 
 But like everything else, **the more you do something the more you want to continue doing it**. Momentum and habit are two very powerful things. They can be used for creating just as easily as consuming and that's exactly what I've been experiencing.
 

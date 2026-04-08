@@ -19,4 +19,4 @@ Now there's an obvious 2x2 matrix here where you've got 1D vs 4D on one axis and
 
 Of course we should try really hard to never build a __low value 4D feature__. But the time will come when you have to build RBACs, add localization to your product, or implement pricing tiers with feature gates. 
 
-You're going to have to build 4D features. But at least now you and your team have a name for it and know it what means for future feature work. 
+You're going to have to build 4D features. But at least now you and your team have a name for it and know what it means for future feature work. 

@@ -65,7 +65,7 @@ Don’t let random items derail your maker days.
 
 A while back I wrote about my [information diet](http://tdub.co/blog/im-going-on-an-information-diet) and my switch to a [bullet journal](http://bulletjournal.com/) for keeping track of my tasks.
 
-For maker days I find that a task list of just 2-3 big rocks, with the the most important item first, works best.
+For maker days I find that a task list of just 2-3 big rocks, with the most important item first, works best.
 
 For manager days though a task list is often much longer – sometimes even 10 to 20 items.
 
@@ -95,7 +95,7 @@ It’s hard at first to let manager tasks stack up (and not immediately tackle t
 
 *   Closing your email. Check it only once or twice a day max.
 *   Mute a few Slack channels, if you can.
-*   Close Twitter, Hacker News, Dribble, et el.
+*   Close Twitter, Hacker News, Dribbble, et el.
 
 ### 6\. Mondays aren’t great for admin days. Fridays are better.
 

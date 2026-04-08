@@ -4,14 +4,14 @@ title: "Reciprocity (and How to Meaningfully Affect Customer Behavior)"
 date: 2012-06-13
 tags: ['product', 'startups']
 ---
-It’s much easier for your customers and users to do nothing than it is to do something (damn you inertia!!!). This is a short guide on how I meanginfully affected customer behavoir (response rates) with the prinicle of reciprocity.
+It’s much easier for your customers and users to do nothing than it is to do something (damn you inertia!!!). This is a short guide on how I meaningfully affected customer behavior (response rates) with the principle of reciprocity.
 
 In my previous startup we were poised to make a dramatic change to our product and pricing. We needed to get early feedback from current customers and validate our ideas so we tapped our customer email list of a few thousand and sent out one of those dreaded surveys.
 
 How we went about asking our customers to take the survey though made all the difference in the world (120% difference to be precise).
 
 ## Enter The Principle of Reciprocity
-Reciprocity is powerful. In short, if you do something nice for someone they’ll likely feel inclined to return the favor. Sounds simple, right? But how do you increase the likelyhood that they actually will?
+Reciprocity is powerful. In short, if you do something nice for someone they’ll likely feel inclined to return the favor. Sounds simple, right? But how do you increase the likelihood that they actually will?
 
 ## The Experiment
 Taking this principle into account, we wanted to send customers a coupon for 25% off our products (the favor) and in return, ask that they complete a survey on our new direction (our request). In addition we used other persuasion techniques like labeling and social proof in our email to grease the wheels.

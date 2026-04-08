@@ -10,7 +10,7 @@ It's why most projects start out with huge, grandiose plans. Why after 6 months 
 
 When we try to please _everyone_, we end up pleasing _no one_.
 
-But telling the world our product or service is only for a really specific group of people is gut wrenching. A little voice inside tells us we're ignoring a huge potentail part of the market, that failure is imminent.
+But telling the world our product or service is only for a really specific group of people is gut wrenching. A little voice inside tells us we're ignoring a huge potential part of the market, that failure is imminent.
 
 But nothing could be further from the truth. It's simply not possible to please _everyone_ even if we wanted to. 
 

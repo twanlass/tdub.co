@@ -13,6 +13,7 @@ import circled from "../images/2024/circled.svg";
 import d2lLogo from "../images/2024/logo-death-2-lorem.svg";
 import shadeLogo from "../images/2025/logo-shade-app.svg";
 import grogLogo from "../images/2025/logo-grog.png";
+import rocketRidesLogo from "../images/2026/logo-rocket-rides.png";
 
 // work
 import analyticsChats from "../images/2024/work/command-ai/analytics-chats.png";
@@ -75,7 +76,16 @@ import nav from "../images/2024/work/command-ai/nav.png";
         <!-- Section: Side projects -->
         <TableSection title="Side projects">
             <Table>
-                <TableRow date="2026" title="Grog" titleLink="https://grog-rts.netlify.app" subtitle="A retro realtime strategy game">
+                <TableRow date="2026" title="Rocket Rides" titleLink="https://sim-taxi.netlify.app/" subtitle="An arcade iOS game">
+                    <div slot="after-title">
+                        <Image 
+                            src={rocketRidesLogo}
+                            class="absolute -top-2 left-[118px] w-[34px] h-[34px] rounded-[8px] rotate-6 drop-shadow-xl hidden lg:block"
+                            alt="Rocket Rides icon" 
+                        />                        
+                    </div>
+                </TableRow>
+                <TableRow date="2026" title="Grog" titleLink="https://grog-rts.netlify.app" subtitle="A retro RTS game">
                     <div slot="after-title">
                         <Image 
                             src={grogLogo}
